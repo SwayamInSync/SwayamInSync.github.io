@@ -2,18 +2,26 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Swayam Singh
+    - email: Email Address
+      value: singhswayam008@gmail.com
+    - name: Phone Number
+      value: +919116277756
+    - name: GitHub
+      value: https://github.com/SwayamInSync
+    - name: LinkedIn
+      value: https://www.linkedin.com/in/swayam-singh-406610213/
+    - name: Kaggle
+      value: https://www.kaggle.com/swayamsingh
+    - name: Google Scholar
+      value: https://scholar.google.com/citations?user=clLJfm8AAAAJ
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: B.Tech
+      institution: University of Allahabad, Uttar Pradesh, India
+      year: 2020 - 2024
       description:
         - Description 1.
         - Description 2.
