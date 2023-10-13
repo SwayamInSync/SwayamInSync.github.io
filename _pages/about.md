@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Your friendly neighborhood CS undergrad, Machine Learning Engineer, and AI researcher
 

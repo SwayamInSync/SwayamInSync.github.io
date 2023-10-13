@@ -48,6 +48,13 @@
         - Assisted in the development and implementation of predictive models to optimize customer retention and demand forecasting, which led to a 25% increase in user engagement.
         - Utilized statistical analysis and machine learning techniques to identify infrastructure issues and developed mitigation methodologies.
         - Made core contributions to Scaler modules in Data Science and Machine Learning.
+    - title: Open Source Research Engineer
+      institution: BigCode
+      year: Feb 2023 - Present
+      description:
+        - Contributed significantly to research projects enhancing code generation and large language models for code, and evaluated mathematical reasoning strategies.
+        - Collaborated on StarCoder, a 15.5B parameter multi-lingual code-gen model trained on 1 trillion tokens, surpassing OpenAI code-Cushman-001 model.
+        - Collaboratively developed OctoPack, leveraging Git commits for instruction tuning and leading to the creation of CommitPack data, Extended HumanEval benchmarks and Octo-duo models.
     - title: Machine Learning Engineer Intern
       institution: dataX.ai (CrowdANALYTX)
       year: May 2022 - Nov 2022
