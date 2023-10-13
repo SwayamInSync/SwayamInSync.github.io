@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Your friendly neighborhood CS undergrad, Machine Learning Engineer, and AI researcher
 
 profile:
   align: right
