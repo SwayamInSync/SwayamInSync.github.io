@@ -7,14 +7,16 @@
       value: singhswayam008@gmail.com
     - name: Phone Number
       value: +919116277756
-    - name: GitHub
-      value: https://github.com/SwayamInSync
-    - name: LinkedIn
-      value: https://www.linkedin.com/in/swayam-singh-406610213/
-    - name: Kaggle
-      value: https://www.kaggle.com/swayamsingh
-    - name: Google Scholar
-      value: https://scholar.google.com/citations?user=clLJfm8AAAAJ
+    - name: Profiles
+      links:
+        - name: "GitHub"
+          link: "https://projectA-details.com"
+        - name: "LinkedIn"
+          link: "https://projectA-docs.com"
+        - name: "Kaggle"
+          link: "https://projectA-docs.com"
+        - name: "Google Scholar"
+          link: "https://projectA-docs.com"
 
 - title: Education
   type: time_table
@@ -29,12 +31,6 @@
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
 
 - title: Experience
   type: time_table
