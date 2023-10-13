@@ -8,6 +8,7 @@ div.container-link-button {
 
 table.table-cv {
   background-color: transparent !important;
+  // width: 150px; 
 }
 
 a.btncv {
@@ -213,3 +214,12 @@ ul.timeline li::before {
      color: var(--global-text-color);
 }
 */
+
+.col-xs-10, .col-sm-10, .col-md-10 {
+  flex: 0 0 85%;
+  max-width: 100%;  /* Adjust this value as required */
+}
+
+.table-cv.institution {
+  width: auto;  /* or specify a width */
+}

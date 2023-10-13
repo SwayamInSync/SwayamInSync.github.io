@@ -25,77 +25,104 @@
       institution: University of Allahabad, Uttar Pradesh, India
       year: 2020 - 2024
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - title: "Relevant Courses:"
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-
-- title: Experience
-  type: time_table
-  contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+            - "Gained a comprehensive understanding of key areas through courses like Data Structures, Algorithms, Operating Systems, Big Data, and Software Engineering."
+        - title: "Skills Acquired:"
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+            - "Acquired hands-on experience with multiple programming languages, such as Python, and C++, along with proficiency in Data Analysis and Machine Learning."
+        - title: "Projects and Research:"
+          contents:
+            - "Actively involved in projects focused on Machine Learning with Natural Language Processing and Computer Vision."
+            - "Developing a comprehensive benchmark for performance-improving code-generation analysis of LLMs."
+            - "Building a system to help users try different clothes virtually by just uploading the image."
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Work Experience
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
+    - title: Data Science Intern
+      institution: Scaler (by Interviewbit)
+      year: Aug 2022 - Present
+      description:
+        - Assisted in the development and implementation of predictive models to optimize customer retention and demand forecasting, which led to a 25% increase in user engagement.
+        - Utilized statistical analysis and machine learning techniques to identify infrastructure issues and developed mitigation methodologies.
+        - Made core contributions to Scaler modules in Data Science and Machine Learning.
+    - title: Machine Learning Engineer Intern
+      institution: dataX.ai (CrowdANALYTX)
+      year: May 2022 - Nov 2022
+      description:
+        - Developed Deep Learning models for business market growth from domains of Computer Vision and Language modelling.
+        - Engineered a comprehensive API to automate the conversion of a pretrained model into ONNX format and its seamless deployment via Nvidia Triton Server, culminating in a 12% reduction in VM load.
+        - Developed custom CUDA kernels to accelerate 3D image processing for medical scans. Achieved a 2x speedup in segmentation tasks compared to existing CPU-based solutions, thereby improving the overall throughput of the system.
+        - Worked on state-of-the-art techniques like DreamBooth, Dichotomous Image Segmentation.
+        - Supporting model deployment team in model code analysis and optimizations for DeployX
+    - title: Applied Machine Learning Instructor
+      institution: Bili Consultancy 
+      year: Jan 2022 - April 2022
+      description:
+        - Mentored final year undergraduate students in their course of Machine Learning.
+        - Evaluated and improved the projects developed by students.
+- title: Projects
   type: time_table
   contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+    - title: <a href="https://github.com/SwayamInSync/clothes-virtual-try-on">Virtual Clothing Assistant [PyTorch, flask, OpenCV](85+ ⭐️)</a>
+      description: 
+        - Allow user to try on different clothes virtually, without going to any trial room.
+        - Used ResNet101 and UNet to segment the cloth and model respectively and pose estimation using openpose then final predictions are done using the PyTorch implementation of VITON.
+        - SSIM (Structural Similarity Index Metric) of 0.895
+    - title: <a href="https://github.com/SwayamInSync/L-WAVE">L-WAVE (LLaMA Web Access and Visual Enhancement) [PyTorch, Langchain, Hugging Face, GGML]</a>
+      description: 
+        - Closed Source LLMs like ChatGPT have knowledge and response limitations resulting in hallucination and non-factual responses.
+        - Engineered a custom AI agent capable of autonomously searching the web for information and rendering images, reducing hallucination.
+        - Implemented cost-effective strategies to set up the entire project in 0$ making L-WAVE accessible to all users without financial barriers.
+        - The objective of keeping 0$ setting up cost leads to custom implementation of every technical detail from integrating web to hosting LLaMA
+    - title: <a href="https://github.com/SwayamInSync/PythonCoder">PythonCoder [PyTorch]</a>
+      description: 
+        - A custom 60M params GPT-like casual code generation model trained and evaluated on large Python codebase for 10k steps.
+        - Self-implemented GPT2 architecture using MultiQueryAttention allows fast large batch inference and FlashAttention allows 3x faster calculation of attention values with context window of 1024 tokens
+        - Training process leverages the entire context length by concatenating the sequences into a one big chunk, enabling faster training and better consumption of compute resources
+    - title: <a href="https://github.com/SwayamInSync/deep-learning/tree/master/Research%20Papers%20implementation/style%20transfer">Image Style Transfer using CNN [PyTorch, Pillow, OpenCV]</a>
+      description: 
+        - It can impose the texture/style of one image on the other without disturbing the content of the other image.
+        - Used pre-trained VGG-19 network to extract the features from multiple convolutional layers for style and content then merged them while maintaining the content and style tradeoff.
+    - title: <a href="https://github.com/practice404/Edwin_Lander_RL">Reinforced Edwin Lander [PyTorch, Stablebaselines3, Gym]</a>
+      description: 
+        - It's a custom Gym environment built to train RL models on the Edwin Lander game to land via following the rules
+        - Current model is trained on PPO algorithm and attained the perfect landing score by training up to 1M steps.
+    - title: <a href="https://huggingface.co/rootacess/xlm-roberta-base-finetuned">Multilingual Name Entity Recognition [PyTorch, Huggingface]</a>
+      description: 
+        - XLM-RoBERTa fine-tuned in German, French, and Italian languages enables robust Zero-Shot Classification.
+        - It achieves the expected f1-score of 0.8638 on validation set and gives decent f1-scores on low-resource languages.
+        - Thoroughly processed and analyzed using a custom Error Analysis pipeline.
+        - Ensures reliable classification across multiple languages through meticulous analysis and error handling.
+    - title: <a href="https://huggingface.co/spaces/bigcode/Reasoning-with-StarCoder">Reasoning With StarCoder</a>
+      description: 
+        - User-driven playground for interacting with StarCoder, assessing its reasoning capabilities.
+        - Evaluation strategies including PAL, TA, and MathPrompter.
+        - Model generates code based on the selected strategy followed by the post-processing of model response then executes it on the server, and displays the result.
+        - Leverage the infilling and commit-style of StarCoder to self repair the codes for potential errors
+        - Flexibility provided by allowing users to edit the generated code and re-run it for customized solutions.
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
+- title: Research and Publication
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Swayam Singh, Niklas Muennighoff, et al., "OctoPack Instruction Tuning Code Large Language Models" arXiv:2308.07124, 2023. Submitted to NeurIPS 2023, ICLR 2024
+    - Swayam Singh, Harm de Vries, et al."StarCoder may the source be with you!" arXiv:2305.06161, 2023. Submitted to TMLR
+
+- title: Achievements
+  type: time_table
+  contents:
+    - year: 2023
+      items: 
+        - Selected in Amazon ML Summer School 2023, Engaged in advanced ML modules and collaborated with leading Amazon ML Scientists.
+    - year: 2022
+      items: 
+        - Secured Top 3 % global rank in Kaggle's 30 days ML challenge.
+
+- title: SKILLS
+  type: list
+  contents:
+    - <u>Languages:</u> Python, C++, Cuda
+    - <u>Frameworks / Libraries:</u> PyTorch, Tensorflow, Huggingface, OpenCV, scikit-learn, Weight & Bias, Docker, AWS, TFX
+    - <u>Technical Skills:</u> Machine Learning, Deep Learning, Reinforcement Learning, NLP , Computer Vision, Data Analysis, Data Structures and Algorithms
