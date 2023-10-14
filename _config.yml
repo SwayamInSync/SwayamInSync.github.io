@@ -121,6 +121,7 @@ blog_name: Swayam's Scripts # blog_name will be displayed in your blog page
 blog_nav_title: Blog # your blog must have a title for it to be displayed in the nav bar
 blog_description: A collection of my original writings
 permalink: /blog/:year/:title/
+future: true
 
 # Pagination
 pagination:
