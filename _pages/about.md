@@ -15,7 +15,7 @@ latest_posts: true  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-Hello there! I’m **Swayam Singh**, an inadvertent wizard in the ever-expanding realm of data science and machine learning. And no, I haven’t been to Hogwarts, but if they ever offer a course in Deep Learning, I'd be the first in line – think of it as the Muggle's Defense Against the Dark Arts!
+Hello Internet wanderer! I’m **Swayam Singh**, an inadvertent wizard in the ever-expanding realm of data science and machine learning. And no, I haven’t been to Hogwarts, but if they ever offer a course in Deep Learning, I'd be the first in line – think of it as the Muggle's Defense Against the Dark Arts!
 
 On the professional front, I've proudly worn the hats of **Data Science Intern**, **Machine Learning Engineer**, and **Open Source Research Engineer**. My ventures in the tech realm encompass pivotal roles from delving into customer retention and mastering the art of **demand forecasting**, to streamlining machine learning pipelines and orchestrating robust **distributed systems**. My hands have danced on **custom CUDA kernels**, ensuring that **MLOps** is not just a buzzword, but a seamlessly integrated practice, and that distributed processing is executed with finesse and efficiency. Furthermore, my **research** escapades allowed me to rub shoulders with some of the brightest minds, resulting in **state-of-the-art Code-gen models—twice**, to be precise.
 
