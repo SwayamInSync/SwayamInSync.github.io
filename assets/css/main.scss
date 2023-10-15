@@ -18,3 +18,124 @@ $max-content-width: {{ site.max_width }};
   "font-awesome/solid",
   "font-awesome/regular"
 ;
+
+
+/* General styles */
+#contactBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  background: var(--btn-bg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
+}
+
+#contactForm {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 280px;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+  background: var(--form-bg);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.formHeader h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.closeBtn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  background: var(--btn-bg);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: #555;
+}
+
+/* Dark mode styles */
+// body.dark-mode #contactBtn {
+//   background-color: #333;
+//   color: black;
+// }
+
+// body.dark-mode #contactForm {
+//   background-color: #333;
+//   color: #fff;
+// }
+
+// body.dark-mode input, body.dark-mode textarea {
+//   background: #555;
+//   color: #fff;
+//   border: 1px solid #444;
+// }
+
+// body.dark-mode input[type="submit"] {
+//   background: white;
+//   color: #333;
+// }
+
+body.dark-mode input[type="submit"]:hover {
+  background: #ddd;
+}
+
+:root {
+  --form-bg: #f8f8f8;
+  --text-color: white;
+  --input-border: #cccccc;
+  --btn-bg: black;
+  --btn-hover-bg: #45a049;
+}
+
+[data-theme="dark"] {
+  --form-bg: #333333;
+  --text-color: black;
+  --input-border: #666666;
+  --btn-bg: white;
+  --btn-hover-bg: #246B24;
+}

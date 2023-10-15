@@ -46,6 +46,41 @@
       {% endif %}
     </div>
 
+            <!-- Contact Button -->
+<div id="contactBtn" onclick="toggleForm()">
+  Let's Chat 💬
+</div>
+
+<!-- Contact Form -->
+<div id="contactForm">
+  <div class="formHeader">
+    <h2>Have a thought? Let's chat!</h2>
+    <button onclick="toggleForm()" class="closeBtn">x</button>
+  </div>
+  <form action="https://formspree.io/f/mdorylbw" method="post">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+
+    <input type="submit" value="SEND">
+  </form>
+</div>
+
+
+<script>
+  function toggleForm() {
+  const form = document.getElementById('contactForm');
+  if (form.style.transform === 'translateY(0%)') {
+    form.style.transform = 'translateY(100%)';
+  } else {
+    form.style.transform = 'translateY(0%)';
+  }
+}
+
+</script>
+
     <!-- Footer -->
     {%- include footer.html %}
 
