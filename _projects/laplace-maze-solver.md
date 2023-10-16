@@ -5,6 +5,6 @@ description: An innovative approach to solving mazes using Laplace's equation. U
 img: assets/img/maze-solver.png
 importance: 2
 category: Misc
-redirect: https://github.com/SwayamInSync/recursion-trace
-github: https://github.com/SwayamInSync/recursion-trace
+redirect: https://github.com/SwayamInSync/Laplace-Maze-Solver
+github: https://github.com/SwayamInSync/Laplace-Maze-Solver
 ---

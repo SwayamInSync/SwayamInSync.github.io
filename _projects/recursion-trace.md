@@ -5,6 +5,6 @@ description: A package to trace recursive function calls and generate/visualize 
 img: assets/img/recursion-trace.png
 importance: 1
 category: Misc
-redirect: https://github.com/SwayamInSync/Laplace-Maze-Solver
-github: https://github.com/SwayamInSync/Laplace-Maze-Solver
+redirect: https://github.com/SwayamInSync/recursion-trace
+github: https://github.com/SwayamInSync/recursion-trace
 ---
