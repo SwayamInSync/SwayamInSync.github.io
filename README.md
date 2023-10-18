@@ -157,3 +157,18 @@ See [git rebase manual](https://help.github.com/en/github/using-git/about-git-re
 If rebasing is too complicated, we recommend re-installing the new version of the theme from scratch and port over your content and changes from the previous version manually.
 
 ---
+
+## Posting Jupyter Notebooks as Blogs
+1. Convert to Markdown
+  ```
+  jupyter nbconvert --to markdown your_notebook.ipynb
+  ```
+  This will save the requried files in a folder say `blog_files`
+
+2. Push that folder inside `assets`
+3. Edit the following
+```
+# replace all the ![](img_path) to <img src="/assets/blog_files/blog_5_1.png">
+OR
+{% include figure.html path="assets/blog_files/blog_3_1.png" class="img-fluid rounded z-depth-1" %}
+```
