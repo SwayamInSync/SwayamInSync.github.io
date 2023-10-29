@@ -3,21 +3,20 @@
   contents:
     - name: Full Name
       value: Swayam Singh
-    - email: Email Address
-      value: singhswayam008@gmail.com
+    - name: Email Address
+      value: <a href="mailto:singhswayam008@gmail.com">singhswayam008@gmail.com</a>
     - name: Phone Number
       value: +919116277756
     - name: Profiles
       links:
         - name: "GitHub"
-          link: "https://projectA-details.com"
+          link: "https://github.com/SwayamInSync"
         - name: "LinkedIn"
-          link: "https://projectA-docs.com"
+          link: "https://www.linkedin.com/in/swayam-singh-406610213/"
         - name: "Kaggle"
-          link: "https://projectA-docs.com"
+          link: "https://www.kaggle.com/swayamsingh"
         - name: "Google Scholar"
-          link: "https://projectA-docs.com"
-
+          link: "https://scholar.google.com/citations?user=clLJfm8AAAAJ&hl"
 - title: Education
   type: time_table
   contents:
@@ -45,7 +44,8 @@
       institution: Scaler (by Interviewbit)
       year: Aug 2022 - Present
       description:
-        - Assisted in the development and implementation of predictive models to optimize customer retention and demand forecasting, which led to a 25% increase in user engagement.
+        - Assisted in the development and deployment of predictive models to minimize infrastructural discrepancies and mitigate potential revenue losses. This proactive approach resulted in a 25% uptick in user engagement.
+        -  Developed automation pipelines to auto-pre-process user engagement data and curate monthly reports and insights on personalized recommendations.
         - Utilized statistical analysis and machine learning techniques to identify infrastructure issues and developed mitigation methodologies.
         - Made core contributions to Scaler modules in Data Science and Machine Learning.
     - title: Open Source Research Engineer
@@ -76,18 +76,25 @@
     - title: <a href="https://github.com/SwayamInSync/clothes-virtual-try-on">Virtual Clothing Assistant [PyTorch, flask, OpenCV](85+ ⭐️)</a>
       description: 
         - Allow user to try on different clothes virtually, without going to any trial room.
-        - Used ResNet101 and UNet to segment the cloth and model respectively and pose estimation using openpose then final predictions are done using the PyTorch implementation of VITON.
-        - SSIM (Structural Similarity Index Metric) of 0.895
+        - Used <strong>ResNet101</strong> and <strong>UNet</strong> to segment the cloth and model respectively and pose estimation using openpose then final predictions are done using the PyTorch implementation of VITON.
+        - <strong>SSIM (Structural Similarity Index Metric)</strong> of 0.895
     - title: <a href="https://github.com/SwayamInSync/L-WAVE">L-WAVE (LLaMA Web Access and Visual Enhancement) [PyTorch, Langchain, Hugging Face, GGML]</a>
       description: 
         - Closed Source LLMs like ChatGPT have knowledge and response limitations resulting in hallucination and non-factual responses.
         - Engineered a custom AI agent capable of autonomously searching the web for information and rendering images, reducing hallucination.
         - Implemented cost-effective strategies to set up the entire project in 0$ making L-WAVE accessible to all users without financial barriers.
         - The objective of keeping 0$ setting up cost leads to custom implementation of every technical detail from integrating web to hosting LLaMA
+    - title: <a href="https://github.com/SwayamInSync/3D-Cervical-Spine-Segmentation-and-Multi-Vertebrae-Fracture-Detection">3D Cervical Spine Segmentation and Multi-Vertebrae Fracture Detection</a>
+      description: 
+        - Developed "3D Cervical Spine Segmentation and Multi-Vertebrae Fracture Detection" to automate cervical spine fracture detection from CT scans, aiming to match radiologist accuracy and ensure timely medical interventions.
+        - Leveraged the RSNA 2022's Kaggle Competition dataset; implemented a two-stage model, with the first stage focusing on <strong>3D segmentation</strong> using <strong>EfficientNet + UNet</strong> to create binary masks for the cervical vertebrae (C1-C7).
+        - The second stage combined <strong>Convnext + LSTM</strong> for classification. Extracted 15 even slices per vertebrae sample by the z-dimension and added the predicted segmentation mask as an additional channel to distinguish between multiple vertebrae.
+        - Created a <strong>3D reconstruction</strong> of spine to visualize the bone and corresponding fracture vertebrae.
+        - Achieved a <strong>Multilabel Dice Score</strong> of 0.92 for segmentation and used a <strong>Modified BCE loss</strong> with a score of 0.365 for classification.
     - title: <a href="https://github.com/SwayamInSync/PythonCoder">PythonCoder [PyTorch]</a>
       description: 
-        - A custom 60M params GPT-like casual code generation model trained and evaluated on large Python codebase for 10k steps.
-        - Self-implemented GPT2 architecture using MultiQueryAttention allows fast large batch inference and FlashAttention allows 3x faster calculation of attention values with context window of 1024 tokens
+        - A custom <strong>60M</strong> params GPT-like casual code generation model trained and evaluated on large Python codebase for 10k steps.
+        - <strong>Self-implemented GPT2</strong> architecture using <strong>MultiQueryAttention</strong> allows fast large batch inference and <strong>FlashAttention</strong> allows 3x faster calculation of attention values with <strong>context window of 1024 tokens</strong>
         - Training process leverages the entire context length by concatenating the sequences into a one big chunk, enabling faster training and better consumption of compute resources
     - title: <a href="https://github.com/SwayamInSync/deep-learning/tree/master/Research%20Papers%20implementation/style%20transfer">Image Style Transfer using CNN [PyTorch, Pillow, OpenCV]</a>
       description: 
@@ -114,7 +121,7 @@
 - title: Research and Publication
   type: list
   contents:
-    - Swayam Singh, Niklas Muennighoff, et al., "OctoPack Instruction Tuning Code Large Language Models" arXiv:2308.07124, 2023. Submitted to NeurIPS 2023, ICLR 2024
+    - Swayam Singh, Niklas Muennighoff, et al., "OctoPack Instruction Tuning Code Large Language Models" arXiv:2308.07124, 2023. <strong><i>Accepted at Instruction Workshop at NeurIPS 2023, ICLR 2024</i></strong>
     - Swayam Singh, Harm de Vries, et al."StarCoder may the source be with you!" arXiv:2305.06161, 2023. Submitted to TMLR
 
 - title: Achievements
@@ -122,6 +129,7 @@
   contents:
     - year: 2023
       items: 
+        - My collaborative research work, "<strong>OctoPack Instruction Tuning Code Large Language Models</strong>" has been accepted at the <strong>Instruction Workshop @ NeurIPS 2023</strong>.
         - Selected in Amazon ML Summer School 2023, Engaged in advanced ML modules and collaborated with leading Amazon ML Scientists.
     - year: 2022
       items: 
