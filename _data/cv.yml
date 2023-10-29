@@ -6,7 +6,7 @@
     - name: Email Address
       value: <a href="mailto:singhswayam008@gmail.com">singhswayam008@gmail.com</a>
     - name: Phone Number
-      value: +919116277756
+      value: +91 9116277756
     - name: Profiles
       links:
         - name: "GitHub"
@@ -140,4 +140,4 @@
   contents:
     - <u>Languages:</u> Python, C++, Cuda
     - <u>Frameworks / Libraries:</u> PyTorch, Tensorflow, Huggingface, OpenCV, scikit-learn, Weight & Bias, Docker, AWS, TFX
-    - <u>Technical Skills:</u> Machine Learning, Deep Learning, Reinforcement Learning, NLP , Computer Vision, Data Analysis, Data Structures and Algorithms
+    - <u>Technical Skills:</u> Machine Learning, Deep Learning, Reinforcement Learning, NLP , Computer Vision, Data Analysis, Data Structures and Algorithms, NeRF, 3D reconstruction, VLM
