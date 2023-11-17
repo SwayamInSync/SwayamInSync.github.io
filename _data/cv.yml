@@ -78,7 +78,7 @@
         - Allow user to try on different clothes virtually, without going to any trial room.
         - Used <strong>ResNet101</strong> and <strong>UNet</strong> to segment the cloth and model respectively and pose estimation using openpose then final predictions are done using the PyTorch implementation of VITON.
         - <strong>SSIM (Structural Similarity Index Metric)</strong> of 0.895
-    - title: <a href="https://github.com/SwayamInSync/S.E.A.R.C.H">S.E.A.R.C.H : Systematic Engine for Analyzed Retrieval and Contextual Handling</a>
+    - title: <a href="https://github.com/SwayamInSync/S.E.A.R.C.H">S.E.A.R.C.H (Systematic Engine for Analyzed Retrieval and Contextual Handling)</a>
       description: 
         - S.E.A.R.C.H is a production-ready intelligent open-source agent that can process factual information, and documents across web, providing interactive, personalized assistance.
         - Backed by Zephyr-7B-beta model with efficient post-quantized fine-tuned on <strong>self-rag</strong> dataset using LoRA, to improve cross-domain performance.
