@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Your friendly neighborhood <code><u>CS undergrad, Machine Learning Engineer, and AI researcher</u></code>
+subtitle: Your friendly neighborhood <code><u>CS Undergrad, Machine Learning Engineer, and AI Researcher</u></code>
 
 profile:
   align: right
@@ -20,8 +20,7 @@ Hello Internet wanderer! I’m **Swayam Singh**, an inadvertent wizard in the ev
 On the professional front, I've proudly worn the hats of **Data Science Intern**, **Machine Learning Engineer**, and **Open Source Research Engineer**. My ventures in the tech realm encompass pivotal roles from delving into customer retention and mastering the art of **demand forecasting**, to streamlining machine learning pipelines and orchestrating robust **distributed systems**. My hands have danced on **custom CUDA kernels**, ensuring that **MLOps** is not just a buzzword, but a seamlessly integrated practice, and that distributed processing is executed with finesse and efficiency. Furthermore, my **research** escapades allowed me to rub shoulders with some of the brightest minds, resulting in **state-of-the-art Code-gen models—twice**, to be precise.
 
 **Hobbies & Fun Bits**:
-  - 📺 Binge-watch **Anime** *let me know if you need some banger recommendations*.
-  - 🎵 Groove and get lost in the soulful vibes of **R&B**🥂.
+  - 📺 Binge-watch **Anime** & Groove on the soulful vibes of **POP+R&B**🥂.
   - ⚽ Show off some fancy footwork on the football pitch, channeling inner Cedric Diggory vibes.
   - 📚 Occasionally geek out over **Quantum physics**—yes, *it's nerdy, but hey, you're in my 'Interests' section*.
 
