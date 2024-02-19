@@ -78,6 +78,11 @@
         - Allow user to try on different clothes virtually, without going to any trial room.
         - Used <strong>ResNet101</strong> and <strong>UNet</strong> to segment the cloth and model respectively and pose estimation using openpose then final predictions are done using the PyTorch implementation of VITON.
         - <strong>SSIM (Structural Similarity Index Metric)</strong> of 0.895
+    - title: <a href="https://github.com/SwayamInSync/MIRA">MIRA - Multimodal Image Reconstruction with Attention *</a>
+      description: 
+        - MIRA is a multimodal transformer for Text/Image to 3D reconstruction just using single 2D image of object within seconds
+        - It uses pre-trained <strong>DINO-V2</strong> as encoder and <strong>custom triplane decoder</strong> that learns to project features on triplane via <strong>cross-attention</strong> and model the relations among the <strong>spatially-structured triplane tokens via self-attention</strong>, <strong>camera features</strong> are modulated within the decoder.
+        - Trained by minimizing the difference between the rendered images and ground truth images at novel views, without the need for excessive 3D-aware regularization or delicate hyper-parameter tuning.
     - title: <a href="https://github.com/SwayamInSync/S.E.A.R.C.H">S.E.A.R.C.H (Systematic Engine for Analyzed Retrieval and Contextual Handling)</a>
       description: 
         - S.E.A.R.C.H is a production-ready intelligent open-source agent that can process factual information, and documents across web, providing interactive, personalized assistance.
