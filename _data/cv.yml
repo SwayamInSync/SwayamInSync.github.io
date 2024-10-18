@@ -44,7 +44,8 @@
       institution: Microsoft Research
       year: July 2024 - Present
       description:
-        - Working with AI4Code Team to develop robust Code Generation Models
+        - Developing LLM with a focus on code generation, instruction-following, and reasoning, working on post-pretraining, online and offline RL methods.
+        - Led large-scale model training on multi-GPU clusters, optimizing distributed training workflows and fine-tuning to achieve high-performance code synthesis and execution.
     - title: Open Source Engineer (Numpy)
       institution: Quansight-Labs
       year: July 2024 - Present
@@ -85,7 +86,7 @@
 - title: Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/SwayamInSync/clothes-virtual-try-on">Virtual Clothing Assistant(170+ ⭐️)</a>
+    - title: <a href="https://github.com/SwayamInSync/clothes-virtual-try-on">Virtual Clothing Assistant(275+ ⭐️)</a>
       description: 
         - Allow user to try on different clothes virtually, without going to any trial room.
         - Used <strong>ResNet101</strong> and <strong>UNet</strong> to segment the cloth and model respectively and pose estimation using openpose then final predictions are done using the PyTorch implementation of VITON.
@@ -153,9 +154,9 @@
         - Top 7% (Bronze medal) in Kaggle’s UBC Ovarian Cancer Subtype Classification and Outlier Detection (UBC-OCEAN) Competition
     - year: 2023
       items: 
-        - My project <a href="https://github.com/SwayamInSync/clothes-virtual-try-on" target="_blank"> Clothes Virtual Try On</a> hit 100+ stars on GitHub! 🌟
+        - My project <a href="https://github.com/SwayamInSync/clothes-virtual-try-on" target="_blank"> Clothes Virtual Try On</a> hit 275+ stars on GitHub! 🌟
         - My collaborative research work, "<strong>StarCoder may the source be with you!</strong>" has been accepted at the <strong>TMLR (Transactions on Machine Learning Research)</strong>.
-        - 100+ citations of my research work on Google Scholar
+        - 700+ citations of my research work on Google Scholar
         - My collaborative research work, "<strong>OctoPack Instruction Tuning Code Large Language Models</strong>" has been accepted at the <strong>Instruction Workshop @ NeurIPS 2023</strong>.
         - Selected in Amazon ML Summer School 2023, Engaged in advanced ML modules and collaborated with leading Amazon ML Scientists.
     - year: 2022

@@ -10,6 +10,19 @@
               {% else %}
               {% assign latest_posts_limit = latest_posts_size %}
               {% endif %}
+              <tr>
+                <th scope="row">Oct 10, 2024</th>
+                <td>
+                  <a class="news-title" href="https://swayaminsync.github.io/swayam-script/posts/Understanding%20Perplexity/">Understanding Perplexity</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Sep 30, 2024</th>
+                <td>
+                  <a class="news-title" href="https://labs.quansight.org/blog/numpy-quaddtype-blog">Numpy QuadDType: Quadruple Precision for Everyone
+                  </a>
+                </td>
+              </tr>
               {% for item in latest_posts limit: latest_posts_limit %}
                 <tr>
                   <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>

@@ -1,0 +1,10 @@
+---
+layout: page
+title: NumPy-QuadDTye
+description: A true cross-platform Quadruple-Precision (128 bit) floating data type for NumPy
+img: https://labs.quansight.org/_next/image?url=%2Fposts%2Fnumpy-quaddtype-blog%2Fhero.png&w=1920&q=75
+importance: 1
+category: Misc
+github: https://github.com/numpy/numpy-user-dtypes
+redirect: https://github.com/numpy/numpy-user-dtypes
+---

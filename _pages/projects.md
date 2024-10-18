@@ -5,7 +5,7 @@ permalink: /projects/
 description: Building and Scaling
 nav: true
 nav_order: 2
-display_categories: [Computer Vision, Natural Language Processing, Reinforcement Learning, Misc]
+display_categories: [Misc, Computer Vision, Natural Language Processing, Reinforcement Learning]
 horizontal: false
 ---
 
