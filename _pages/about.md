@@ -6,7 +6,7 @@ subtitle: <code><u>"Research at Microsoft Research, Contributing to Low-Level Nu
 
 profile:
   align: right
-  image: prof_pic.png
+  image: prof_pic.jpeg
   image_circular: false # crops the image to make it circular
   more_info:
 
