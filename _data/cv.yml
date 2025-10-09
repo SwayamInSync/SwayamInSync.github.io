@@ -46,6 +46,12 @@
       description:
         - Developing LLM with a focus on code generation, instruction-following, and reasoning, working on post-pretraining, online and offline RL methods.
         - Led large-scale model training on multi-GPU clusters, optimizing distributed training workflows and fine-tuning to achieve high-performance code synthesis and execution.
+    
+    - title: NumPy Maintainer (NumPy-QuadDType)
+      institution: NumPy
+      year: June 2025 - Present
+      description:
+        - Created and maintaining the cross-platform 128-bit precision floating point data-type (50K+ downloads) and NumPy C API. 
     - title: Open Source Engineer (Numpy)
       institution: Quansight-Labs
       year: July 2024 - Present
@@ -86,23 +92,31 @@
 - title: Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/SwayamInSync/clothes-virtual-try-on">Virtual Clothing Assistant(275+ ⭐️)</a>
+    - title: <a href="https://github.com/SwayamInSync/clothes-virtual-try-on">Virtual Clothing Assistant(480+ ⭐️)</a>
       description: 
         - Allow user to try on different clothes virtually, without going to any trial room.
         - Used <strong>ResNet101</strong> and <strong>UNet</strong> to segment the cloth and model respectively and pose estimation using openpose then final predictions are done using the PyTorch implementation of VITON.
         - <strong>SSIM (Structural Similarity Index Metric)</strong> of 0.895
-    - title: <a href="https://github.com/SwayamInSync/MIRA">MIRA - Multimodal Image Reconstruction with Attention *</a>
+    - title: <a href="https://github.com/numpy/numpy-user-dtypes/tree/main/quaddtype">Numpy-QuadDType(50K Downloads)</a>
+      description: 
+        - A cross-platform extended precision (128-bit) floating point data type for NumPy
+        - longdouble and other extended precision dtypes are platform dependent leading to inconsistencies in reliability for cross platform applications
+    - title: <a href="https://github.com/SwayamInSync/QBLAS">QBLAS</a>
+      description: 
+        - A set of efficient linear algebra routines fir criss-platform 128 bit precision floating points, built on top of SLEEF.
+        - Provides fast APIs for ~21× faster dot, ~77× faster GEMV and ~3× faster GEMM operations on x86-64 and AARCH machines.
+    - title: <a href="https://github.com/SwayamInSync/MIRA">MIRA - Multimodal Image Reconstruction with Attention</a>
       description: 
         - MIRA is a multimodal transformer for Text/Image to 3D reconstruction just using single 2D image of object within seconds
         - It uses pre-trained <strong>DINO-V2</strong> as encoder and <strong>custom triplane decoder</strong> that learns to project features on triplane via <strong>cross-attention</strong> and model the relations among the <strong>spatially-structured triplane tokens via self-attention</strong>, <strong>camera features</strong> are modulated within the decoder.
         - Trained by minimizing the difference between the rendered images and ground truth images at novel views, without the need for excessive 3D-aware regularization or delicate hyper-parameter tuning.
-    - title: <a href="https://github.com/SwayamInSync/S.E.A.R.C.H">S.E.A.R.C.H (Systematic Engine for Analyzed Retrieval and Contextual Handling)</a>
-      description: 
-        - S.E.A.R.C.H is a production-ready intelligent open-source agent that can process factual information, and documents across web, providing interactive, personalized assistance.
-        - Backed by Zephyr-7B-beta model with efficient post-quantized fine-tuned on <strong>self-rag</strong> dataset using LoRA, to improve cross-domain performance.
-        - Production-ready, scalable and efficient Retriever-Augmented Generation system, Retrieving process backed with Keyword extraction + ReRanking.
-        - Custom subsequent-query engine allows generating multiple in-context related queries to intelligently cover all possible scenraios.
-        - In-built code-interpreter allows efficiently solving reasoning and critical tasks much better than ChatGPT3.5
+    # - title: <a href="https://github.com/SwayamInSync/S.E.A.R.C.H">S.E.A.R.C.H (Systematic Engine for Analyzed Retrieval and Contextual Handling)</a>
+    #   description: 
+    #     - S.E.A.R.C.H is a production-ready intelligent open-source agent that can process factual information, and documents across web, providing interactive, personalized assistance.
+    #     - Backed by Zephyr-7B-beta model with efficient post-quantized fine-tuned on <strong>self-rag</strong> dataset using LoRA, to improve cross-domain performance.
+    #     - Production-ready, scalable and efficient Retriever-Augmented Generation system, Retrieving process backed with Keyword extraction + ReRanking.
+    #     - Custom subsequent-query engine allows generating multiple in-context related queries to intelligently cover all possible scenraios.
+    #     - In-built code-interpreter allows efficiently solving reasoning and critical tasks much better than ChatGPT3.5
     - title: <a href="https://github.com/SwayamInSync/3D-Cervical-Spine-Segmentation-and-Multi-Vertebrae-Fracture-Detection">3D Cervical Spine Segmentation and Multi-Vertebrae Fracture Detection</a>
       description: 
         - Developed "3D Cervical Spine Segmentation and Multi-Vertebrae Fracture Detection" to automate cervical spine fracture detection from CT scans, aiming to match radiologist accuracy and ensure timely medical interventions.
@@ -110,39 +124,40 @@
         - The second stage combined <strong>Convnext + LSTM</strong> for classification. Extracted 15 even slices per vertebrae sample by the z-dimension and added the predicted segmentation mask as an additional channel to distinguish between multiple vertebrae.
         - Created a <strong>3D reconstruction</strong> of spine to visualize the bone and corresponding fracture vertebrae.
         - Achieved a <strong>Multilabel Dice Score</strong> of 0.92 for segmentation and used a <strong>Modified BCE loss</strong> with a score of 0.365 for classification.
-    - title: <a href="https://github.com/SwayamInSync/PythonCoder">PythonCoder [PyTorch]</a>
-      description: 
-        - A custom <strong>60M</strong> params GPT-like casual code generation model trained and evaluated on large Python codebase for 10k steps.
-        - <strong>Self-implemented GPT2</strong> architecture using <strong>MultiQueryAttention</strong> allows fast large batch inference and <strong>FlashAttention</strong> allows 3x faster calculation of attention values with <strong>context window of 1024 tokens</strong>
-        - Training process leverages the entire context length by concatenating the sequences into a one big chunk, enabling faster training and better consumption of compute resources
-    - title: <a href="https://github.com/SwayamInSync/deep-learning/tree/master/Research%20Papers%20implementation/style%20transfer">Image Style Transfer using CNN [PyTorch, Pillow, OpenCV]</a>
-      description: 
-        - It can impose the texture/style of one image on the other without disturbing the content of the other image.
-        - Used pre-trained VGG-19 network to extract the features from multiple convolutional layers for style and content then merged them while maintaining the content and style tradeoff.
-    - title: <a href="https://github.com/practice404/Edwin_Lander_RL">Reinforced Edwin Lander [PyTorch, Stablebaselines3, Gym]</a>
-      description: 
-        - It's a custom Gym environment built to train RL models on the Edwin Lander game to land via following the rules
-        - Current model is trained on PPO algorithm and attained the perfect landing score by training up to 1M steps.
-    - title: <a href="https://huggingface.co/rootacess/xlm-roberta-base-finetuned">Multilingual Name Entity Recognition [PyTorch, Huggingface]</a>
-      description: 
-        - XLM-RoBERTa fine-tuned in German, French, and Italian languages enables robust Zero-Shot Classification.
-        - It achieves the expected f1-score of 0.8638 on validation set and gives decent f1-scores on low-resource languages.
-        - Thoroughly processed and analyzed using a custom Error Analysis pipeline.
-        - Ensures reliable classification across multiple languages through meticulous analysis and error handling.
-    - title: <a href="https://huggingface.co/spaces/bigcode/Reasoning-with-StarCoder">Reasoning With StarCoder</a>
-      description: 
-        - User-driven playground for interacting with StarCoder, assessing its reasoning capabilities.
-        - Evaluation strategies including PAL, TA, and MathPrompter.
-        - Model generates code based on the selected strategy followed by the post-processing of model response then executes it on the server, and displays the result.
-        - Leverage the infilling and commit-style of StarCoder to self repair the codes for potential errors
-        - Flexibility provided by allowing users to edit the generated code and re-run it for customized solutions.
+    # - title: <a href="https://github.com/SwayamInSync/PythonCoder">PythonCoder [PyTorch]</a>
+    #   description: 
+    #     - A custom <strong>60M</strong> params GPT-like casual code generation model trained and evaluated on large Python codebase for 10k steps.
+    #     - <strong>Self-implemented GPT2</strong> architecture using <strong>MultiQueryAttention</strong> allows fast large batch inference and <strong>FlashAttention</strong> allows 3x faster calculation of attention values with <strong>context window of 1024 tokens</strong>
+    #     - Training process leverages the entire context length by concatenating the sequences into a one big chunk, enabling faster training and better consumption of compute resources
+    # - title: <a href="https://github.com/SwayamInSync/deep-learning/tree/master/Research%20Papers%20implementation/style%20transfer">Image Style Transfer using CNN [PyTorch, Pillow, OpenCV]</a>
+    #   description: 
+    #     - It can impose the texture/style of one image on the other without disturbing the content of the other image.
+    #     - Used pre-trained VGG-19 network to extract the features from multiple convolutional layers for style and content then merged them while maintaining the content and style tradeoff.
+    # - title: <a href="https://github.com/practice404/Edwin_Lander_RL">Reinforced Edwin Lander [PyTorch, Stablebaselines3, Gym]</a>
+    #   description: 
+    #     - It's a custom Gym environment built to train RL models on the Edwin Lander game to land via following the rules
+    #     - Current model is trained on PPO algorithm and attained the perfect landing score by training up to 1M steps.
+    # - title: <a href="https://huggingface.co/rootacess/xlm-roberta-base-finetuned">Multilingual Name Entity Recognition [PyTorch, Huggingface]</a>
+    #   description: 
+    #     - XLM-RoBERTa fine-tuned in German, French, and Italian languages enables robust Zero-Shot Classification.
+    #     - It achieves the expected f1-score of 0.8638 on validation set and gives decent f1-scores on low-resource languages.
+    #     - Thoroughly processed and analyzed using a custom Error Analysis pipeline.
+    #     - Ensures reliable classification across multiple languages through meticulous analysis and error handling.
+    # - title: <a href="https://huggingface.co/spaces/bigcode/Reasoning-with-StarCoder">Reasoning With StarCoder</a>
+    #   description: 
+    #     - User-driven playground for interacting with StarCoder, assessing its reasoning capabilities.
+    #     - Evaluation strategies including PAL, TA, and MathPrompter.
+    #     - Model generates code based on the selected strategy followed by the post-processing of model response then executes it on the server, and displays the result.
+    #     - Leverage the infilling and commit-style of StarCoder to self repair the codes for potential errors
+    #     - Flexibility provided by allowing users to edit the generated code and re-run it for customized solutions.
 
 - title: Research and Publication
   type: list
   contents:
+    - Swayam Singh, et al., "NextCoder- Robust Adaptation of Code LMs to Diverse Code Edits", 2025. <strong><i>Accepted at ICML'2025, ICLR'DL4C 2025</i></strong>
+    - Swayam Singh, Kamalkumar Rathinasamy, et al., "Narrow Transformer, Starcoder-Based Java-LM For Desktop" arXiv:2407.03941, 2024.
     - Swayam Singh, Niklas Muennighoff, et al., "OctoPack Instruction Tuning Code Large Language Models" arXiv:2308.07124, 2023. <strong><i>Accepted at Instruction Workshop at NeurIPS 2023, ICLR 2024</i></strong>
     - Swayam Singh, Harm de Vries, et al."StarCoder may the source be with you!" arXiv:2305.06161, 2023. <strong><i>Accepted at TMLR (Transactions on Machine Learning Research)</i></strong>
-    - Swayam Singh, Kamalkumar Rathinasamy, et al., "Narrow Transformer, Starcoder-Based Java-LM For Desktop" arXiv:2407.03941, 2024.
 
 - title: Achievements
   type: time_table
@@ -156,7 +171,7 @@
       items: 
         - My project <a href="https://github.com/SwayamInSync/clothes-virtual-try-on" target="_blank"> Clothes Virtual Try On</a> hit 275+ stars on GitHub! 🌟
         - My collaborative research work, "<strong>StarCoder may the source be with you!</strong>" has been accepted at the <strong>TMLR (Transactions on Machine Learning Research)</strong>.
-        - 700+ citations of my research work on Google Scholar
+        - 1.8k+ citations of my research work on Google Scholar
         - My collaborative research work, "<strong>OctoPack Instruction Tuning Code Large Language Models</strong>" has been accepted at the <strong>Instruction Workshop @ NeurIPS 2023</strong>.
         - Selected in Amazon ML Summer School 2023, Engaged in advanced ML modules and collaborated with leading Amazon ML Scientists.
     - year: 2022
