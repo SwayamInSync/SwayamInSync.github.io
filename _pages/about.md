@@ -107,4 +107,5 @@ Raymond Li, …, **Swayam Singh**, et al. (BigCode)
 
 - _2024.03_: **MAMBA: Zero to Hero** — invited talk on State Space Models at [Cohere for AI](https://cohere.com/research).
 - _date_ 🚧: **Data Science & AI — community mentorship session** — a hands-on session covering the fundamentals of ML, deep learning, generative AI, and LLMs for aspiring data scientists. <!-- 🚧 MARKER: add date + host/community name -->
+- _date_ 🚧: **Getting Started in Machine Learning** — a **GDG On-Campus** (GDSC) session: a beginner-friendly roadmap covering where to start, the resources that matter, career opportunities, and the future scope of ML. <!-- 🚧 MARKER: add date + campus/chapter -->
 <!-- 🚧 MARKER: add more talks here -->
