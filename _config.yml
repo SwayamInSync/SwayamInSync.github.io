@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Swayam Singh"
-description              : "Research Fellow at Microsoft Research India, working on code LLMs, reasoning, and high-performance numerical computing."
+description              : "Swayam Singh — Research Fellow at Microsoft Research India, working on code LLMs, efficient post-training, and high-performance numerical computing."
 repository               : "SwayamInSync/SwayamInSync.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Swayam Singh"
   avatar           : "assets/profile_picture.png"
-  bio              : "Research Fellow, Microsoft Research"
+  bio              : "Working on code LLMs, efficient post-training algorithms, and high-performance numerical computing"
   location         : "Bengaluru, India"
   employer         :
   pubmed           :
