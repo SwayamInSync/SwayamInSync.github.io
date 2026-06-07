@@ -1,55 +1,58 @@
 %=====================================================================
 %  Swayam Singh — Résumé
-%  Custom single-column template (Overleaf-ready, compile with pdflatex)
-%  Style: centered name, FontAwesome contact row, ruled section headers,
-%         bold title / right-aligned date entries, tight bullet lists.
+%  Custom single-column template (Overleaf-ready, compile with pdflatex).
+%  Mirrors the original FlowCV design: Source Sans Pro, centered name,
+%  FontAwesome contact row, ruled ALL-CAPS section headers, bold-title /
+%  right-aligned-date entries, small link icon after linked names.
 %=====================================================================
 \documentclass[a4paper,9pt]{extarticle}
 
 \usepackage[T1]{fontenc}
-\usepackage[default]{lato}            % clean humanist sans (matches the original)
+\usepackage[default]{sourcesanspro}    % the original's font
 \usepackage[hidelinks]{hyperref}
-\usepackage{fontawesome5}             % contact + inline icons
+\usepackage{fontawesome5}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{microtype}
-\usepackage[
-  a4paper,
-  left=1.25cm, right=1.25cm, top=0.85cm, bottom=0.8cm
-]{geometry}
+\usepackage[a4paper, left=1.2cm, right=1.2cm, top=0.9cm, bottom=0.7cm]{geometry}
 
-% ---- global tweaks --------------------------------------------------
+% ---- colors ---------------------------------------------------------
+\definecolor{accent}{HTML}{000000}      % near-black text / rules
+\definecolor{linkgray}{HTML}{6A6A6A}    % subtle link icon
+\definecolor{gold}{HTML}{F2B705}        % the star
+
+% ---- global ---------------------------------------------------------
 \setlength{\parindent}{0pt}
-\setlength{\emergencystretch}{2em}     % avoid overfull lines into the margin
-\linespread{0.97}
+\setlength{\emergencystretch}{2em}
+\linespread{0.93}
 \pagestyle{empty}
-\definecolor{accent}{HTML}{1A1A1A}     % near-black; change for a colored theme
-\hypersetup{urlcolor=accent}
 
-% ---- section headers: ALL CAPS, bold, full-width rule ---------------
+% ---- section headers: ALL CAPS, bold, thin full-width rule ----------
 \titleformat{\section}
-  {\large\bfseries\color{accent}}
-  {}{0em}{\MakeUppercase}
-  [\vspace{-5pt}{\color{accent}\rule{\linewidth}{0.8pt}}\vspace{-6pt}]
-\titlespacing*{\section}{0pt}{5pt}{3pt}
+  {\large\bfseries}{}{0em}{\MakeUppercase}
+  [{\vspace{-3.5pt}\color{accent}\titlerule[0.7pt]}]
+\titlespacing*{\section}{0pt}{5.5pt}{3pt}
 
-% ---- tight bullet list ----------------------------------------------
+% ---- bullet lists ---------------------------------------------------
 \newlist{tight}{itemize}{2}
-\setlist[tight,1]{leftmargin=1.35em, itemsep=0.8pt, topsep=1.2pt, parsep=0pt,
-                  label=\small$\bullet$}
-\setlist[tight,2]{leftmargin=1.25em, itemsep=1pt,   topsep=1pt, parsep=0pt,
-                  label=\small$\circ$}
+\setlist[tight,1]{leftmargin=1.35em, itemsep=1.0pt, topsep=1.4pt, parsep=0pt,
+                  label=\small\textbullet}
+\setlist[tight,2]{leftmargin=1.25em, itemsep=0.8pt, topsep=1.0pt, parsep=0pt,
+                  label=\footnotesize\textopenbullet}
 
-% ---- helper: title (left, bold) + meta (right) ----------------------
-\newcommand{\headerrow}[2]{\textbf{#1}\hfill #2\par}
-\newcommand{\subrow}[2]{\textbf{#1}\hfill #2\par}
+% ---- small link icon + linked (bold) name ---------------------------
+\newcommand{\lkicon}[1]{\,\href{#1}{\footnotesize\color{linkgray}\faLink}}
+% \linked{Name}{URL}  -> bold name, hyperlinked, with trailing link icon.
+% Empty URL -> just the bold name (no icon).
+\newcommand{\linked}[2]{%
+  \if\relax\detokenize{#2}\relax\textbf{#1}\else\textbf{\href{#2}{#1}}\lkicon{#2}\fi}
 
-% ---- helper: an experience/education block --------------------------
-% \entry{Title}{Right meta (dates)}{Organisation}{Right meta (location)}
+% ---- experience / education block -----------------------------------
+% \entry{Title}{Right meta (dates)}{Organisation}{Org URL}
 \newcommand{\entry}[4]{%
-  \vspace{1pt}\textbf{#1}\hfill #2\par
-  \textbf{#3}\hfill #4\par\vspace{-3pt}}
+  \vspace{1.5pt}\textbf{#1}\hfill {\normalfont #2}\par
+  \linked{#3}{#4}\par\vspace{1pt}}
 
 \begin{document}
 
@@ -57,16 +60,16 @@
 %  HEADER
 %=====================================================================
 \begin{center}
-  {\LARGE\bfseries\color{accent} Swayam Singh}\\[5pt]
+  {\fontsize{19}{21}\selectfont\bfseries Swayam Singh}\\[5pt]
   \small
   \faEnvelope~\href{mailto:singhswayam008@gmail.com}{singhswayam008@gmail.com}
-  \quad
+  \enspace\enspace
   \faPhone*~+91~9116277756
-  \quad
+  \enspace\enspace
   \href{https://github.com/SwayamInSync}{\faGithub~GitHub}
-  \quad
+  \enspace\enspace
   \href{https://www.linkedin.com/in/swayam-singh-406610213/}{\faLinkedin~LinkedIn}
-  \quad
+  \enspace\enspace
   \href{https://scholar.google.com/citations?user=clLJfm8AAAAJ}{\faGraduationCap~Google Scholar}
 \end{center}
 
@@ -74,15 +77,15 @@
 %  EDUCATION
 %=====================================================================
 \section{Education}
-\textbf{B.Tech (Computer Science and Engineering)}\hfill 2020 -- 2024 \quad\textbar\quad CGPA: 9.56\par
-\textbf{University of Allahabad}\par
+\textbf{B.Tech (Computer Science and Engineering)}\hfill {\normalfont 2020 -- 2024 ~\textbar~ CGPA: 9.56}\par
+\linked{University of Allahabad}{https://www.allduniv.ac.in/}\par
 
 %=====================================================================
 %  PROFESSIONAL EXPERIENCE
 %=====================================================================
 \section{Professional Experience}
 
-\entry{Research Fellow}{07/2024 -- Present}{Microsoft Research}{}
+\entry{Research Fellow}{07/2024 -- Present}{Microsoft Research}{https://www.microsoft.com/en-us/research/lab/microsoft-research-india/}
 \begin{tight}
   \item Engineered an \textbf{end-to-end code autoformalization pipeline} in Rust, enabling automated translation of natural language and informal code specifications into formally \textbf{verifiable representations}.
   \item Developing \textbf{foundational algorithms} that exploit \textbf{reinforcement learning gradient optimization dynamics} to improve representation efficiency, stability, and generalization in large-scale models.
@@ -91,14 +94,14 @@
   \item \textbf{Led large-scale model training on multi-GPU clusters}, optimizing distributed training workflows and fine-tuning for high-performance code synthesis and execution.
 \end{tight}
 
-\entry{Maintainer at NumPy}{07/2024 -- Present}{NumPy}{}
+\entry{Maintainer at NumPy}{07/2024 -- Present}{NumPy}{https://numpy.org/}
 \begin{tight}
   \item Review, merge, and evaluate core PRs affecting dtype architecture, numerical semantics, and cross-platform behavior.
   \item Maintain core NumPy with a focus on dtype infrastructure, numerical correctness, and long-term maintenance.
   \item Work closely with contributors and maintainers across architectures to address portability, performance, and ABI concerns.
 \end{tight}
 
-\entry{Open Source Intern -- Numerical Types \& Precision (NumPy OSS)}{07/2024 -- 09/2024}{Quansight}{}
+\entry{Open Source Intern -- Numerical Types \& Precision (NumPy OSS)}{07/2024 -- 09/2024}{Quansight}{https://quansight.com/}
 \begin{tight}
   \item Led development of \textbf{NumPy-QuadDType}, a cross-platform 128-bit floating-point system providing consistent quadruple-precision arithmetic beyond platform-dependent long double.
   \item Implemented full NumPy dtype ecosystem integration: \textbf{casting, ufunc dispatch, scalar types, memory model, and serialization}.
@@ -117,15 +120,15 @@
 %=====================================================================
 \section{Research and Publication}
 \begin{tight}
-  \item \textbf{Swayam Singh} et al. ``\textbf{NextCoder: Robust Learning of Diverse Code Edits}'' arXiv:2503.03656, 2025.
+  \item \textbf{Swayam Singh} et al. ``\textbf{NextCoder: Robust Learning of Diverse Code Edits}'' arXiv:2503.03656, 2025.\lkicon{https://arxiv.org/abs/2503.03656}
   \begin{tight}
     \item Published in \textbf{ICML 2025} main conference \quad\textbar\quad \textbf{ICLR 2025 DL4Code} workshop.
   \end{tight}
-  \item \textbf{Swayam Singh}, Niklas Muennighoff, et al. ``\textbf{OctoPack: Instruction Tuning Code Large Language Models}'' arXiv:2308.07124, 2023.
+  \item \textbf{Swayam Singh}, Niklas Muennighoff, et al. ``\textbf{OctoPack: Instruction Tuning Code Large Language Models}'' arXiv:2308.07124, 2023.\lkicon{https://arxiv.org/abs/2308.07124}
   \begin{tight}
     \item \textbf{Spotlight (top 5\%)} at \textbf{ICLR 2024} \quad\textbar\quad \textbf{Instruction Workshop} at \textbf{NeurIPS 2023}.
   \end{tight}
-  \item \textbf{Swayam Singh}, Harm de Vries, et al. ``\textbf{StarCoder: may the source be with you!}'' arXiv:2305.06161, 2023.
+  \item \textbf{Swayam Singh}, Harm de Vries, et al. ``\textbf{StarCoder: may the source be with you!}'' arXiv:2305.06161, 2023.\lkicon{https://arxiv.org/abs/2305.06161}
   \begin{tight}
     \item Published at \textbf{TMLR} (Transactions on Machine Learning Research).
   \end{tight}
@@ -136,7 +139,7 @@
 %=====================================================================
 \section{Projects}
 
-\textbf{Virtual Clothing Assistant}~~{\small[PyTorch, Flask, OpenCV]}\hfill 500+ {\color{Dandelion}\faStar}~on GitHub\par
+\linked{Virtual Clothing Assistant}{https://github.com/SwayamInSync/clothes-virtual-try-on}~~{\small[PyTorch, Flask, OpenCV]}~~{\small(500+ {\color{gold}\faStar}~on GitHub)}\par
 \begin{tight}
   \item Lets users try on different clothes virtually, without going to a trial room.
   \item Used \textbf{ResNet101} and \textbf{UNet} to segment the cloth and model respectively, with pose estimation via \textbf{OpenPose}; final predictions use the PyTorch implementation of \textbf{VITON}.
@@ -144,7 +147,8 @@
 \end{tight}
 
 \vspace{1.5pt}
-\textbf{Numpy-QuadDType}~~{\small A cross-platform Quad (128-bit) float data-type for NumPy.}\par
+\linked{Numpy-QuadDType}{https://github.com/SwayamInSync/numpy-quaddtype}\par
+\textbf{A cross-platform Quad (128-bit) float data-type for NumPy.}\par\vspace{1.5pt}
 \begin{tight}
   \item Core developer and maintainer of a cross-platform 128-bit floating-point data type for NumPy.
   \item Designed a portable alternative to long double, eliminating architecture- and compiler-dependent irregularities.
@@ -152,7 +156,7 @@
 \end{tight}
 
 \vspace{1.5pt}
-\textbf{MIRA -- Multimodal Image Reconstruction with Attention}\par
+\linked{MIRA -- Multimodal Image Reconstruction with Attention}{https://github.com/swayamInSync/mira}\par\vspace{1.5pt}
 \begin{tight}
   \item Designed a transformer-based multimodal architecture for single-view text/image-to-3D reconstruction using ViT encoders and triplane decoders with cross-attention.
   \item Enabled fast 3D mesh and video generation from a single image in \textless10 seconds on an A100 GPU, significantly outperforming traditional NeRF pipelines.
