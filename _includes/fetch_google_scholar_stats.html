@@ -8,7 +8,8 @@
         $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
             var totalCiteEl = document.getElementById('total_cit');
             if (totalCiteEl && data['citedby'] != null) {
-                totalCiteEl.innerHTML = data['citedby'];
+                var n = data['citedby'];
+                totalCiteEl.innerHTML = n >= 1000 ? (Math.floor(n / 100) / 10) + 'k+' : n + '+';
             }
             var citationEles = document.getElementsByClassName('show_paper_citations');
             Array.prototype.forEach.call(citationEles, function (element) {
