@@ -10,11 +10,11 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I'm a **Research Fellow at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/) India** (AI4Code). I work on large language models for code — improving how they reason, follow instructions, and edit real-world codebases — across the full stack: training and reinforcement-learning algorithms, multi-GPU distributed training, GPU kernels, and formal-verification tooling for C++.
+I'm a **Research Fellow at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/) India** (AI4Code). I work on large language models for code, improving how they reason, follow instructions, and edit real-world codebases. My work spans the full stack: training and reinforcement-learning algorithms, multi-GPU distributed training, GPU kernels, and formal-verification tooling for C++.
 
 Alongside research, I build open-source numerical-computing infrastructure. I author and maintain [`numpy-quaddtype`](https://github.com/SwayamInSync/numpy-quaddtype), a cross-platform 128-bit (quad-precision) floating-point data type for NumPy with 100k+ downloads, as part of [Quansight Labs](https://labs.quansight.org/). Earlier I contributed to [StarCoder](https://arxiv.org/abs/2305.06161) and [OctoPack](https://arxiv.org/abs/2308.07124) with the [BigCode](https://www.bigcode-project.org/) community, and I'm a Kaggle Competition Expert.
 
-My interests sit where machine learning meets systems — making models more capable, and the software they run on faster and more correct. I have <strong><span id='total_cit'>—</span></strong> citations on [Google Scholar](https://scholar.google.com/citations?user=clLJfm8AAAAJ). <!-- the count fills in automatically once the Scholar crawler runs on the deployed repo -->
+My interests sit where machine learning meets systems: making models more capable, and the software they run on faster and more correct. I have <strong><span id='total_cit'>...</span></strong> citations on [Google Scholar](https://scholar.google.com/citations?user=clLJfm8AAAAJ). <!-- the count fills in automatically once the Scholar crawler runs on the deployed repo -->
 
 # 🔥 News
 
