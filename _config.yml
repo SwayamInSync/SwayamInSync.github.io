@@ -39,7 +39,7 @@ author:
   foursquare       :
   github           : "SwayamInSync"
   kaggle           : "swayamsingh"
-  cv               : # e.g., "/files/Swayam_Singh_CV.pdf"
+  cv               : "/files/Swayam-Singh-Resume.pdf"
   google_plus      :
   keybase          :
   instagram        :
@@ -68,6 +68,7 @@ include:
   - files
 exclude:
   - google_scholar_crawler
+  - resume
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

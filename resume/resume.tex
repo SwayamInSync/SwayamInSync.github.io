@@ -1,0 +1,172 @@
+%=====================================================================
+%  Swayam Singh — Résumé
+%  Custom single-column template (Overleaf-ready, compile with pdflatex)
+%  Style: centered name, FontAwesome contact row, ruled section headers,
+%         bold title / right-aligned date entries, tight bullet lists.
+%=====================================================================
+\documentclass[a4paper,9pt]{extarticle}
+
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}            % clean humanist sans (matches the original)
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome5}             % contact + inline icons
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{microtype}
+\usepackage[
+  a4paper,
+  left=1.25cm, right=1.25cm, top=0.85cm, bottom=0.8cm
+]{geometry}
+
+% ---- global tweaks --------------------------------------------------
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{2em}     % avoid overfull lines into the margin
+\linespread{0.97}
+\pagestyle{empty}
+\definecolor{accent}{HTML}{1A1A1A}     % near-black; change for a colored theme
+\hypersetup{urlcolor=accent}
+
+% ---- section headers: ALL CAPS, bold, full-width rule ---------------
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0em}{\MakeUppercase}
+  [\vspace{-5pt}{\color{accent}\rule{\linewidth}{0.8pt}}\vspace{-6pt}]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+
+% ---- tight bullet list ----------------------------------------------
+\newlist{tight}{itemize}{2}
+\setlist[tight,1]{leftmargin=1.35em, itemsep=0.8pt, topsep=1.2pt, parsep=0pt,
+                  label=\small$\bullet$}
+\setlist[tight,2]{leftmargin=1.25em, itemsep=1pt,   topsep=1pt, parsep=0pt,
+                  label=\small$\circ$}
+
+% ---- helper: title (left, bold) + meta (right) ----------------------
+\newcommand{\headerrow}[2]{\textbf{#1}\hfill #2\par}
+\newcommand{\subrow}[2]{\textbf{#1}\hfill #2\par}
+
+% ---- helper: an experience/education block --------------------------
+% \entry{Title}{Right meta (dates)}{Organisation}{Right meta (location)}
+\newcommand{\entry}[4]{%
+  \vspace{1pt}\textbf{#1}\hfill #2\par
+  \textbf{#3}\hfill #4\par\vspace{-3pt}}
+
+\begin{document}
+
+%=====================================================================
+%  HEADER
+%=====================================================================
+\begin{center}
+  {\LARGE\bfseries\color{accent} Swayam Singh}\\[5pt]
+  \small
+  \faEnvelope~\href{mailto:singhswayam008@gmail.com}{singhswayam008@gmail.com}
+  \quad
+  \faPhone*~+91~9116277756
+  \quad
+  \href{https://github.com/SwayamInSync}{\faGithub~GitHub}
+  \quad
+  \href{https://www.linkedin.com/in/swayam-singh-406610213/}{\faLinkedin~LinkedIn}
+  \quad
+  \href{https://scholar.google.com/citations?user=clLJfm8AAAAJ}{\faGraduationCap~Google Scholar}
+\end{center}
+
+%=====================================================================
+%  EDUCATION
+%=====================================================================
+\section{Education}
+\textbf{B.Tech (Computer Science and Engineering)}\hfill 2020 -- 2024 \quad\textbar\quad CGPA: 9.56\par
+\textbf{University of Allahabad}\par
+
+%=====================================================================
+%  PROFESSIONAL EXPERIENCE
+%=====================================================================
+\section{Professional Experience}
+
+\entry{Research Fellow}{07/2024 -- Present}{Microsoft Research}{}
+\begin{tight}
+  \item Engineered an \textbf{end-to-end code autoformalization pipeline} in Rust, enabling automated translation of natural language and informal code specifications into formally \textbf{verifiable representations}.
+  \item Developing \textbf{foundational algorithms} that exploit \textbf{reinforcement learning gradient optimization dynamics} to improve representation efficiency, stability, and generalization in large-scale models.
+  \item Developed an LLM performing on par with GPT-4o, focused on code generation, instruction-following, and reasoning; worked on post-pretraining and online/offline RL methods.
+  \item Developed a new supervised fine-tuning method, \textbf{SeleKT}, that preserves generalization while significantly improving downstream task performance.
+  \item \textbf{Led large-scale model training on multi-GPU clusters}, optimizing distributed training workflows and fine-tuning for high-performance code synthesis and execution.
+\end{tight}
+
+\entry{Maintainer at NumPy}{07/2024 -- Present}{NumPy}{}
+\begin{tight}
+  \item Review, merge, and evaluate core PRs affecting dtype architecture, numerical semantics, and cross-platform behavior.
+  \item Maintain core NumPy with a focus on dtype infrastructure, numerical correctness, and long-term maintenance.
+  \item Work closely with contributors and maintainers across architectures to address portability, performance, and ABI concerns.
+\end{tight}
+
+\entry{Open Source Intern -- Numerical Types \& Precision (NumPy OSS)}{07/2024 -- 09/2024}{Quansight}{}
+\begin{tight}
+  \item Led development of \textbf{NumPy-QuadDType}, a cross-platform 128-bit floating-point system providing consistent quadruple-precision arithmetic beyond platform-dependent long double.
+  \item Implemented full NumPy dtype ecosystem integration: \textbf{casting, ufunc dispatch, scalar types, memory model, and serialization}.
+  \item Built robust multi-platform distribution and testing infrastructure, handling \textbf{compiler toolchains, SIMD availability, FMA support, and architecture-specific numerical behavior}.
+\end{tight}
+
+\entry{Machine Learning Engineer Intern}{05/2022 -- 10/2022}{dataX.ai}{}
+\begin{tight}
+  \item Developed deep-learning models for business-market growth across Computer Vision and language modelling.
+  \item Engineered a comprehensive API to automate conversion of a pretrained model into ONNX format and its seamless deployment via NVIDIA Triton Server, culminating in a 12\% reduction in VM load.
+  \item Developed custom CUDA kernels to accelerate 3D image processing for medical scans, achieving a 2x speedup in segmentation tasks over existing GPU-based solutions and improving overall throughput.
+\end{tight}
+
+%=====================================================================
+%  RESEARCH AND PUBLICATION
+%=====================================================================
+\section{Research and Publication}
+\begin{tight}
+  \item \textbf{Swayam Singh} et al. ``\textbf{NextCoder: Robust Learning of Diverse Code Edits}'' arXiv:2503.03656, 2025.
+  \begin{tight}
+    \item Published in \textbf{ICML 2025} main conference \quad\textbar\quad \textbf{ICLR 2025 DL4Code} workshop.
+  \end{tight}
+  \item \textbf{Swayam Singh}, Niklas Muennighoff, et al. ``\textbf{OctoPack: Instruction Tuning Code Large Language Models}'' arXiv:2308.07124, 2023.
+  \begin{tight}
+    \item \textbf{Spotlight (top 5\%)} at \textbf{ICLR 2024} \quad\textbar\quad \textbf{Instruction Workshop} at \textbf{NeurIPS 2023}.
+  \end{tight}
+  \item \textbf{Swayam Singh}, Harm de Vries, et al. ``\textbf{StarCoder: may the source be with you!}'' arXiv:2305.06161, 2023.
+  \begin{tight}
+    \item Published at \textbf{TMLR} (Transactions on Machine Learning Research).
+  \end{tight}
+\end{tight}
+
+%=====================================================================
+%  PROJECTS
+%=====================================================================
+\section{Projects}
+
+\textbf{Virtual Clothing Assistant}~~{\small[PyTorch, Flask, OpenCV]}\hfill 500+ {\color{Dandelion}\faStar}~on GitHub\par
+\begin{tight}
+  \item Lets users try on different clothes virtually, without going to a trial room.
+  \item Used \textbf{ResNet101} and \textbf{UNet} to segment the cloth and model respectively, with pose estimation via \textbf{OpenPose}; final predictions use the PyTorch implementation of \textbf{VITON}.
+  \item Achieved an \textbf{SSIM} (Structural Similarity Index Metric) of 0.895.
+\end{tight}
+
+\vspace{1.5pt}
+\textbf{Numpy-QuadDType}~~{\small A cross-platform Quad (128-bit) float data-type for NumPy.}\par
+\begin{tight}
+  \item Core developer and maintainer of a cross-platform 128-bit floating-point data type for NumPy.
+  \item Designed a portable alternative to long double, eliminating architecture- and compiler-dependent irregularities.
+  \item Integrated with NumPy's dtype, casting, and dispatch mechanisms while maintaining performance and correctness.
+\end{tight}
+
+\vspace{1.5pt}
+\textbf{MIRA -- Multimodal Image Reconstruction with Attention}\par
+\begin{tight}
+  \item Designed a transformer-based multimodal architecture for single-view text/image-to-3D reconstruction using ViT encoders and triplane decoders with cross-attention.
+  \item Enabled fast 3D mesh and video generation from a single image in \textless10 seconds on an A100 GPU, significantly outperforming traditional NeRF pipelines.
+  \item Integrated diffusion-based image generation (SDXL) with structured 3D reconstruction for end-to-end multimodal scene synthesis.
+\end{tight}
+
+%=====================================================================
+%  SKILLS
+%=====================================================================
+\section{Skills}
+\begin{tight}
+  \item Systems programming, numerical computing, cross-platform portability.
+  \item C/C++, Python (NumPy internals), memory management, performance optimization.
+  \item Large-scale open-source development, code review, and long-term maintenance.
+\end{tight}
+
+\end{document}
