@@ -67,9 +67,7 @@ include:
   - _pages
   - files
 exclude:
-  - docs
   - google_scholar_crawler
-  - tools
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

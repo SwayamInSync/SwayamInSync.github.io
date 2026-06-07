@@ -2,9 +2,6 @@ _site/
 push.sh
 .DS_Store
 
-# Figure-utility scratch (the chosen thumbnails live in images/)
-tools/figure_candidates/
-
 # Local Jekyll / Ruby build artifacts
 vendor/
 .bundle/
