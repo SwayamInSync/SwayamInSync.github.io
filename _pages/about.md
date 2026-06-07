@@ -95,7 +95,7 @@ Raymond Li, …, **Swayam Singh**, et al. (BigCode)
 
 - _2024_: **Kaggle Competition Expert** — Bronze medal (top 7%) in UBC-OCEAN; top 3% in the _30 Days of ML_ challenge.
 - _2024_: **OctoPack** accepted as a **Spotlight (top 5%)** at ICLR 2024.
-- _2023_: Selected to attend **Google Research Week** — Google Research's gathering of AI researchers (keynote by Jeff Dean; sessions on differential privacy, responsible AI, and more). <!-- 🚧 MARKER: confirm year -->
+- _2024_: Selected to attend **Google Research Week** — Google Research's gathering of AI researchers (keynote by Jeff Dean; sessions on differential privacy, responsible AI, and more).
 - _2023_: Selected for the **Amazon ML Summer School 2023**.
 - _2023_: **Clothes Virtual Try-On** crossed **275+** GitHub stars.
 
@@ -106,6 +106,6 @@ Raymond Li, …, **Swayam Singh**, et al. (BigCode)
 # 💬 Invited Talks
 
 - _2024.03_: **MAMBA: Zero to Hero** — invited talk on State Space Models at [Cohere for AI](https://cohere.com/research).
-- _date_ 🚧: **Data Science & AI — community mentorship session** — a hands-on session covering the fundamentals of ML, deep learning, generative AI, and LLMs for aspiring data scientists. <!-- 🚧 MARKER: add date + host/community name -->
-- _date_ 🚧: **Getting Started in Machine Learning** — a **GDG On-Campus** (GDSC) session: a beginner-friendly roadmap covering where to start, the resources that matter, career opportunities, and the future scope of ML. <!-- 🚧 MARKER: add date + campus/chapter -->
+- _date_ 🚧: **From Deep Learning to Large Language Models** — a talk on the foundations of modern AI: deep learning, generative models, and LLMs. <!-- 🚧 MARKER: add date + host/community name -->
+- _date_ 🚧: **Foundations of Machine Learning** — a **GDG On-Campus** session on the ML landscape: core ideas, the tooling ecosystem, and where the field is headed. <!-- 🚧 MARKER: add date + campus/chapter -->
 <!-- 🚧 MARKER: add more talks here -->
