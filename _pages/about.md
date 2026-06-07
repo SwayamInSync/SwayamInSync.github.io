@@ -3,7 +3,7 @@ permalink: /
 title: ""
 excerpt: ""
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
@@ -16,27 +16,27 @@ Alongside research, I build open-source numerical-computing infrastructure. I au
 
 My interests sit where machine learning meets systems — making models more capable, and the software they run on faster and more correct. I have <strong><span id='total_cit'>—</span></strong> citations on [Google Scholar](https://scholar.google.com/citations?user=clLJfm8AAAAJ). <!-- the count fills in automatically once the Scholar crawler runs on the deployed repo -->
 
-
 # 🔥 News
-- *2025.05*: &nbsp;🎉 **NextCoder** was accepted at **ICML 2025**. <!-- 🚧 MARKER: verify exact month -->
-- *2024.07*: &nbsp;🎉 Joined **Microsoft Research** India as a Research Fellow on the AI4Code team.
-- *2024.07*: &nbsp;📦 Released **`numpy-quaddtype`** (quad-precision for NumPy), now with 100k+ downloads.
-- *2024.06*: &nbsp;🏅 Reached **Kaggle Competition Expert**.
-- *2023.10*: &nbsp;🎉 **OctoPack** accepted as a **Spotlight (top 5%)** at ICLR 2024. <!-- 🚧 MARKER: verify month -->
+
+- _2025.05_: &nbsp;🎉 **NextCoder** was accepted at **ICML 2025**. <!-- 🚧 MARKER: verify exact month -->
+- _2024.07_: &nbsp;🎉 Joined **Microsoft Research** India as a Research Fellow on the AI4Code team.
+- _2024.07_: &nbsp;📦 Released **`numpy-quaddtype`** (quad-precision for NumPy), now with 100k+ downloads.
+- _2024.06_: &nbsp;🏅 Reached **Kaggle Competition Expert**.
+- _2023.10_: &nbsp;🎉 **OctoPack** accepted as a **Spotlight (top 5%)** at ICLR 2024. <!-- 🚧 MARKER: verify month -->
 <!-- 🚧 MARKER: add your latest news items here -->
 
 # 💼 Experience
 
-- **Research Fellow**, [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/) India · *Jul 2024 – Present*<br>Training and adapting LLMs for code generation, editing, and reasoning; multi-GPU distributed training and RL fine-tuning. Lead author of [NextCoder](https://www.microsoft.com/en-us/research/publication/nextcoder-robust-adaptation-of-code-lms-to-diverse-code-edits/) (ICML 2025).
-- **Open Source Engineer (NumPy)**, [Quansight Labs](https://labs.quansight.org/) · *Jul 2024 – Present*<br>Author and maintainer of [`numpy-quaddtype`](https://github.com/SwayamInSync/numpy-quaddtype), a cross-platform 128-bit quad-precision dtype (100k+ downloads) built on NumPy's new C DType API.
-- **Open Source Research Engineer**, [BigCode](https://www.bigcode-project.org/) · *Feb 2023 – 2024* <!-- 🚧 MARKER: confirm end date -->
-<br>Contributed to [StarCoder](https://arxiv.org/abs/2305.06161) (15.5B parameters, 1T tokens) and [OctoPack](https://arxiv.org/abs/2308.07124) for instruction tuning of code models.
-- **Machine Learning Engineer Intern**, dataX.ai (CrowdANALYTX) · *May 2022 – Nov 2022*<br>Deep-learning models for vision and language; built an ONNX conversion API and custom CUDA kernels for a 2× segmentation speedup.
-- **Data Science Intern**, Scaler (InterviewBit) · *2022* <!-- 🚧 MARKER: confirm dates -->
-<br>Built predictive models and data-preprocessing automation, improving user engagement by ~25%.
-- **Applied ML Instructor**, Bili Consultancy · *Jan 2022 – Apr 2022*<br>Mentored undergraduate students in applied machine learning.
+- **Research Fellow**, [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/) India · _Jul 2024 – Present_<br>Training and adapting LLMs for code generation, editing, and reasoning; multi-GPU distributed training and RL fine-tuning. Lead author of [NextCoder](https://www.microsoft.com/en-us/research/publication/nextcoder-robust-adaptation-of-code-lms-to-diverse-code-edits/) (ICML 2025).
+- **Open Source Engineer (NumPy)**, [Quansight Labs](https://labs.quansight.org/) · _Jul 2024 – Present_<br>Author and maintainer of [`numpy-quaddtype`](https://github.com/SwayamInSync/numpy-quaddtype), a cross-platform 128-bit quad-precision dtype (100k+ downloads) built on NumPy's new C DType API.
+- **Open Source Research Engineer**, [BigCode](https://www.bigcode-project.org/) · _Feb 2023 – 2024_ <!-- 🚧 MARKER: confirm end date -->
+  <br>Contributed to [StarCoder](https://arxiv.org/abs/2305.06161) (15.5B parameters, 1T tokens) and [OctoPack](https://arxiv.org/abs/2308.07124) for instruction tuning of code models.
+- **Machine Learning Engineer Intern**, dataX.ai (CrowdANALYTX) · _May 2022 – Nov 2022_<br>Deep-learning models for vision and language; built an ONNX conversion API and custom CUDA kernels for a 2× segmentation speedup.
+- **Data Science Intern**, Scaler (InterviewBit) · _2022_ <!-- 🚧 MARKER: confirm dates -->
+  <br>Built predictive models and data-preprocessing automation, improving user engagement by ~25%.
+- **Applied ML Instructor**, Bili Consultancy · _Jan 2022 – Apr 2022_<br>Mentored undergraduate students in applied machine learning.
 
-# 📝 Publications 
+# 📝 Publications
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025</div><img src='images/nextcoder.png' alt="NextCoder" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -91,21 +91,30 @@ Raymond Li, …, **Swayam Singh**, et al. (BigCode)
 
 # 🚀 Projects
 
-- [**numpy-quaddtype**](https://github.com/SwayamInSync/numpy-quaddtype) — Cross-platform 128-bit quad-precision floating-point dtype for NumPy (100k+ downloads), built on the new NumPy C DType API. *(C · Python)*
-- [**QBLAS**](https://github.com/SwayamInSync/QBLAS) — High-performance BLAS for IEEE-754 binary128 (quad) precision. *(C)*
-- [**cpp-verify**](https://github.com/SwayamInSync/cpp-verify) — Extending C++ with program-verification constructs backed by SMT solvers, on LLVM. *(C++ · LLVM)*
-- [**Clothes Virtual Try-On**](https://github.com/SwayamInSync/clothes-virtual-try-on) — A ViTON-based virtual clothing try-on assistant. *(PyTorch)*
-- **MIRA** — Multimodal Image Reconstruction with Attention: transformer-based 2D-to-3D reconstruction. <!-- 🚧 MARKER: add repo/demo link -->
+- [**numpy-quaddtype**](https://github.com/SwayamInSync/numpy-quaddtype) — Cross-platform 128-bit quad-precision floating-point dtype for NumPy (100k+ downloads). (C, C++, Python)
+- [**QBLAS**](https://github.com/SwayamInSync/QBLAS) — High-performance BLAS for IEEE-754 binary128 (quad) precision. _(C++)_
+- [**cpp-verify**](https://github.com/SwayamInSync/cpp-verify) — Extending C++ with program-verification constructs backed by SMT solvers, on LLVM. _(C++ · LLVM)_
+- [**Clothes Virtual Try-On**](https://github.com/SwayamInSync/clothes-virtual-try-on) — A cusotm combined ViTON-based model for virtual clothing try-on assistant (500+⭐️). _(PyTorch)_
+- [**MIRA**](https://github.com/swayamInSync/mira) — Multimodal Image Reconstruction with Attention: transformer-based 2D-to-3D reconstruction. _(PyTorch)_
+
+# ✍️ Latest Blogs
+
+<div id="latest-posts" class="blog-list">
+  <p class="blog-loading">Loading latest posts… <a href="https://swayaminsync.github.io/swayam-script/" target="_blank" rel="noopener">Visit the blog →</a></p>
+</div>
 
 # 🎖 Honors and Awards
-- *2024*: **Kaggle Competition Expert** — Bronze medal (top 7%) in UBC-OCEAN; top 3% in the *30 Days of ML* challenge.
-- *2024*: **OctoPack** accepted as a **Spotlight (top 5%)** at ICLR 2024.
-- *2023*: Selected for the **Amazon ML Summer School 2023**.
-- *2023*: **Clothes Virtual Try-On** crossed **275+** GitHub stars.
+
+- _2024_: **Kaggle Competition Expert** — Bronze medal (top 7%) in UBC-OCEAN; top 3% in the _30 Days of ML_ challenge.
+- _2024_: **OctoPack** accepted as a **Spotlight (top 5%)** at ICLR 2024.
+- _2023_: Selected for the **Amazon ML Summer School 2023**.
+- _2023_: **Clothes Virtual Try-On** crossed **275+** GitHub stars.
 
 # 📖 Education
-- *2020 – 2024*, **B.Tech**, University of Allahabad, India.<br>Coursework across data structures, algorithms, operating systems, and big data; focus on machine learning with NLP and computer vision.
+
+- _2020 – 2024_, **B.Tech**, University of Allahabad, India.<br>Coursework across data structures, algorithms, operating systems, and big data; focus on machine learning with NLP and computer vision.
 
 # 💬 Invited Talks
-- *2024.03*: **MAMBA: Zero to Hero** — invited talk on State Space Models at [Cohere for AI](https://cohere.com/research).
+
+- _2024.03_: **MAMBA: Zero to Hero** — invited talk on State Space Models at [Cohere for AI](https://cohere.com/research).
 <!-- 🚧 MARKER: add more talks here -->
