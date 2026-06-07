@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-# Build the résumé and copy the PDF into the site's files/ folder,
-# where the website's sidebar "CV" link points.
+# Compile the résumé. resume.pdf is served directly by the site at
+# /resume/resume.pdf (the sidebar "CV" link), so commit it after building.
 set -e
 cd "$(dirname "$0")"
 export PATH="/Library/TeX/texbin:$PATH"
 pdflatex -interaction=nonstopmode -halt-on-error resume.tex >/dev/null
-cp resume.pdf ../files/Swayam-Singh-Resume.pdf
-echo "✓ Built resume.pdf → files/Swayam-Singh-Resume.pdf"
+echo "✓ Built resume.pdf — commit it to update the site's CV link"

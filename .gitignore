@@ -5,13 +5,12 @@ push.sh
 # original reference résumé at repo root (kept locally, not published)
 /Swayam-Singh-Resume.pdf
 
-# LaTeX résumé build artifacts (source is resume/resume.tex; served PDF in files/)
+# LaTeX résumé scratch (resume.pdf itself is committed and served at /resume/resume.pdf)
 resume/*.aux
 resume/*.log
 resume/*.out
 resume/*.fls
 resume/*.fdb_latexmk
-resume/resume.pdf
 
 # Local Jekyll / Ruby build artifacts
 vendor/
