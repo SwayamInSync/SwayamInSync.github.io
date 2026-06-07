@@ -91,7 +91,7 @@ Raymond Li, …, **Swayam Singh**, et al. (BigCode)
 
 # 🚀 Projects
 
-- [**`numpy-quaddtype`**](https://github.com/SwayamInSync/numpy-quaddtype) — Cross-platform 128-bit quad-precision floating-point dtype for NumPy (100k+ downloads), built on the new NumPy C DType API. *(C · Python)*
+- [**numpy-quaddtype**](https://github.com/SwayamInSync/numpy-quaddtype) — Cross-platform 128-bit quad-precision floating-point dtype for NumPy (100k+ downloads), built on the new NumPy C DType API. *(C · Python)*
 - [**QBLAS**](https://github.com/SwayamInSync/QBLAS) — High-performance BLAS for IEEE-754 binary128 (quad) precision. *(C)*
 - [**cpp-verify**](https://github.com/SwayamInSync/cpp-verify) — Extending C++ with program-verification constructs backed by SMT solvers, on LLVM. *(C++ · LLVM)*
 - [**Clothes Virtual Try-On**](https://github.com/SwayamInSync/clothes-virtual-try-on) — A ViTON-based virtual clothing try-on assistant. *(PyTorch)*
