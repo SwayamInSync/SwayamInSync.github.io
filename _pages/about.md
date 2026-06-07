@@ -94,10 +94,10 @@ Raymond Li, …, **Swayam Singh**, et al. (BigCode)
 # 🎖 Honors and Awards
 
 - _2024_: **Kaggle Competition Expert** — Bronze medal (top 7%) in UBC-OCEAN; top 3% in the _30 Days of ML_ challenge.
-- _2024_: **Invited** for **Google Research Week** — Google Research's gathering of AI researchers (keynote by Jeff Dean; sessions on differential privacy, responsible AI, and more).
+- _2024_: Invited to **Google Research Week** — Google Research's gathering of AI researchers (keynote by Jeff Dean; sessions on differential privacy, responsible AI, and more).
 - _2024_: **OctoPack** accepted as a **Spotlight (top 5%)** at ICLR 2024.
 - _2023_: Selected for the **Amazon ML Summer School 2023**.
-- _2023_: **Clothes Virtual Try-On** crossed **275+** GitHub stars.
+- _2023_: **Clothes Virtual Try-On** crossed **500+** GitHub stars.
 
 # 📖 Education
 
