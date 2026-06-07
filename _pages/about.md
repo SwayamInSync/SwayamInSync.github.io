@@ -105,7 +105,7 @@ Raymond Li, …, **Swayam Singh**, et al. (BigCode)
 
 # 💬 Invited Talks
 
-- _2026_: **Autoformalization & Verification of Rust Programs · Efficient Sparse-LLM Training** — internal research talk at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/).
+- _2026_: **Toward Provably-Correct Code and Efficient LLMs** — internal research talk at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/) on LLM-driven autoformalization and verification of Rust programs, and methods for training sparse LLMs efficiently.
 - _2025.11_: **Foundations of Machine Learning** — a **GDG On-Campus** session on the ML landscape: core ideas, the tooling ecosystem, and where the field is headed.
 - _2025_: **From Deep Learning to Large Language Models** — a talk on the foundations of modern AI: deep learning, generative models, and LLMs.
 - _2024.03_: **MAMBA: Zero to Hero** — invited talk on State Space Models at [Cohere for AI](https://cohere.com/research).
