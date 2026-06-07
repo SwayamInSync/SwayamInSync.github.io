@@ -1,3 +1,10 @@
 _site/
 push.sh
 .DS_Store
+
+# Local Jekyll / Ruby build artifacts
+vendor/
+.bundle/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/

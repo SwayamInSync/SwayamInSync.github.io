@@ -107,3 +107,6 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+
+// Theme toggle + dark mode (kept last so its overrides win the cascade)
+@import "dark";

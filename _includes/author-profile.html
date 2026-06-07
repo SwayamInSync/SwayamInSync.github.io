@@ -31,6 +31,9 @@
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
       {% endif %}
+      {% if author.cv %}
+        <li><a href="{{ author.cv }}"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> CV</a></li>
+      {% endif %}
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>
       {% endif %}
@@ -66,6 +69,9 @@
       {% endif %}
       {% if author.github %}
         <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      {% endif %}
+      {% if author.kaggle %}
+        <li><a href="https://www.kaggle.com/{{ author.kaggle }}"><i class="ai ai-kaggle ai-fw" aria-hidden="true"></i> Kaggle</a></li>
       {% endif %}
       {% if author.stackoverflow %}
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
@@ -126,6 +132,9 @@
       {% if author.email %}
         <a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>
       {% endif %}
+      {% if author.cv %}
+        <a href="{{ author.cv }}"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i></a>
+      {% endif %}
       {% if author.keybase %}
         <a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i></a>
       {% endif %}
@@ -161,6 +170,9 @@
       {% endif %}
       {% if author.github %}
         <a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if author.kaggle %}
+        <a href="https://www.kaggle.com/{{ author.kaggle }}"><i class="ai ai-kaggle ai-fw" aria-hidden="true"></i></a>
       {% endif %}
       {% if author.stackoverflow %}
         <a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i></a>
