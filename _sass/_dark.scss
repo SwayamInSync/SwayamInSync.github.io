@@ -79,7 +79,11 @@ $dk-heading: #e8eaed;
   /* sidebar / author profile */
   .author__avatar img { border-color: $dk-border; }
   .author__content, .sidebar, .sidebar p, .sidebar li { color: $dk-text; }
-  .author__urls { background: $dk-surface; border-color: $dk-border; box-shadow: 0 0 10px rgba(#000, 0.5); }
+  .author__urls {
+    background: $dk-surface; border-color: $dk-border; box-shadow: 0 0 10px rgba(#000, 0.5);
+    /* on wide screens the list is inline/transparent — keep it that way */
+    @include breakpoint($large) { background: transparent; border: 0; box-shadow: none; }
+  }
   .author__urls:before { border-color: $dk-border transparent; }
   .author__urls:after  { border-color: $dk-surface transparent; }
   .author__urls a { color: $dk-text; }
