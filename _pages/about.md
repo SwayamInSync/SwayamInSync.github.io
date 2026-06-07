@@ -82,7 +82,7 @@ Raymond Li, …, **Swayam Singh**, et al. (BigCode)
 - [**numpy-quaddtype**](https://github.com/SwayamInSync/numpy-quaddtype) — Cross-platform 128-bit quad-precision floating-point dtype for NumPy (100k+ downloads). (C, C++, Python)
 - [**QBLAS**](https://github.com/SwayamInSync/QBLAS) — High-performance BLAS for IEEE-754 binary128 (quad) precision. _(C++)_
 - [**cpp-verify**](https://github.com/SwayamInSync/cpp-verify) — Extending C++ with program-verification constructs backed by SMT solvers, on LLVM. _(C++ · LLVM)_
-- [**Clothes Virtual Try-On**](https://github.com/SwayamInSync/clothes-virtual-try-on) — A cusotm combined ViTON-based model for virtual clothing try-on assistant (500+⭐️). _(PyTorch)_
+- [**Clothes Virtual Try-On**](https://github.com/SwayamInSync/clothes-virtual-try-on) — A custom ViTON-based model for a virtual clothing try-on assistant (500+ ⭐). _(PyTorch)_
 - [**MIRA**](https://github.com/swayamInSync/mira) — Multimodal Image Reconstruction with Attention: transformer-based 2D-to-3D reconstruction. _(PyTorch)_
 
 # ✍️ Latest Blogs
@@ -105,7 +105,7 @@ Raymond Li, …, **Swayam Singh**, et al. (BigCode)
 
 # 💬 Invited Talks
 
-- _2026_: **Provably-Correct Code and Efficient Sparse Training of LLMs** — internal research talk at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/) on LLM-driven autoformalization and verification of Rust programs, and efficient sparse training methods for large language models.
+- _2026_: **Formally Verified Code-Gen and Efficient Sparse Training of LLMs** — internal research talk at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/) on LLM-driven autoformalization and verification of Rust programs, and efficient sparse training methods for large language models.
 - _2025.11_: **Foundations of Machine Learning** — a **GDG On-Campus** session on the ML landscape: core ideas, the tooling ecosystem, and where the field is headed.
 - _2025_: **From Deep Learning to Large Language Models** — a talk on the foundations of modern AI: deep learning, generative models, and LLMs.
 - _2024.03_: **MAMBA: Zero to Hero** — invited talk on State Space Models at [Cohere for AI](https://cohere.com/research).
