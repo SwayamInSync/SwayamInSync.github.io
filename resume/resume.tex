@@ -1,176 +1,168 @@
-%=====================================================================
-%  Swayam Singh — Résumé
-%  Custom single-column template (Overleaf-ready, compile with pdflatex).
-%  Mirrors the original FlowCV design: Source Sans Pro, centered name,
-%  FontAwesome contact row, ruled ALL-CAPS section headers, bold-title /
-%  right-aligned-date entries, small link icon after linked names.
-%=====================================================================
-\documentclass[a4paper,9pt]{extarticle}
+%------------------------
+% Résumé — "clean" variant (2-page)
+% Based on Anubhav Singh's MIT-licensed template (github.com/xprilion),
+% filled with Swayam Singh's data; header swapped for a centered name +
+% FontAwesome contact row (matching the original design).
+%------------------------
+\documentclass[a4paper,11pt]{article}
 
-\usepackage[T1]{fontenc}
-\usepackage[default]{sourcesanspro}    % the original's font
-\usepackage[hidelinks]{hyperref}
-\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
 \usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
 \usepackage{enumitem}
-\usepackage[usenames,dvipsnames]{xcolor}
-\usepackage{microtype}
-\usepackage[a4paper, left=1.2cm, right=1.2cm, top=0.9cm, bottom=0.7cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
 
-% ---- colors ---------------------------------------------------------
-\definecolor{accent}{HTML}{000000}      % near-black text / rules
-\definecolor{linkgray}{HTML}{6A6A6A}    % subtle link icon
-\definecolor{gold}{HTML}{F2B705}        % the star
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-% ---- global ---------------------------------------------------------
-\setlength{\parindent}{0pt}
-\setlength{\emergencystretch}{2em}
-\linespread{0.93}
-\pagestyle{empty}
+% Margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
 
-% ---- section headers: ALL CAPS, bold, thin full-width rule ----------
-\titleformat{\section}
-  {\fontsize{10}{12}\selectfont\bfseries}{}{0em}{\MakeUppercase}
-  [{\vspace{1.5pt}\color{accent}\titlerule[0.7pt]}]
-\titlespacing*{\section}{0pt}{5.5pt}{3pt}
+\urlstyle{rm}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
 
-% ---- bullet lists ---------------------------------------------------
-\newlist{tight}{itemize}{2}
-\setlist[tight,1]{leftmargin=1.35em, itemsep=1.0pt, topsep=1.4pt, parsep=0pt,
-                  label=\small\textbullet}
-\setlist[tight,2]{leftmargin=1.25em, itemsep=0.8pt, topsep=1.0pt, parsep=0pt,
-                  label=\footnotesize\textopenbullet}
+% Section formatting
+\titleformat{\section}{\vspace{-6pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule\vspace{-4pt}]
 
-% ---- small link icon + linked (bold) name ---------------------------
-\newcommand{\lkicon}[1]{\,\href{#1}{\footnotesize\color{linkgray}\faLink}}
-% \linked{Name}{URL}  -> bold name, hyperlinked, with trailing link icon.
-% Empty URL -> just the bold name (no icon).
-\newcommand{\linked}[2]{%
-  \if\relax\detokenize{#2}\relax\textbf{#1}\else\textbf{\href{#2}{#1}}\lkicon{#2}\fi}
+%------ custom commands ------
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}: #2}\vspace{-1pt}}
+\newcommand{\resumeItemPlain}[1]{\item\small{#1}\vspace{-1pt}}
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{1pt}\item[]
+    \begin{tabular*}{0.99\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small #3} & {\small #4} \\
+    \end{tabular*}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}}
+\renewcommand{\labelitemii}{$\circ$}
 
-% ---- experience / education block -----------------------------------
-% \entry{Title}{Right meta (dates)}{Organisation}{Org URL}
-\newcommand{\entry}[4]{%
-  \vspace{1.5pt}\textbf{#1}\hfill {\normalfont #2}\par
-  \linked{#3}{#4}\par\vspace{1pt}}
+\newcommand{\resumeHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}, itemsep=3pt, topsep=3pt, parsep=0pt]}
+\newcommand{\resumeHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.3em, label=$\bullet$, itemsep=1.5pt, topsep=2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 \begin{document}
 
-%=====================================================================
-%  HEADER
-%=====================================================================
+%---------- HEADING (centered name + icon contact row) ----------
 \begin{center}
-  {\fontsize{14.5}{17}\selectfont\bfseries Swayam Singh}\\[5pt]
-  \normalsize
+  {\Huge\bfseries Swayam Singh}\\[4pt]
+  \small
   \faEnvelope~\href{mailto:singhswayam008@gmail.com}{singhswayam008@gmail.com}
-  \hspace{1.7em}
+  \hspace{1.2em}
   \faPhone*~+91~9116277756
-  \hspace{1.7em}
+  \hspace{1.2em}
   \href{https://github.com/SwayamInSync}{\faGithub~GitHub}
-  \hspace{1.7em}
+  \hspace{1.2em}
   \href{https://www.linkedin.com/in/swayam-singh-406610213/}{\faLinkedin~LinkedIn}
-  \hspace{1.7em}
+  \hspace{1.2em}
   \href{https://scholar.google.com/citations?user=clLJfm8AAAAJ}{\faGraduationCap~Google Scholar}
 \end{center}
 
-%=====================================================================
-%  EDUCATION
-%=====================================================================
+%----------- EDUCATION -----------
 \section{Education}
-\textbf{B.Tech (Computer Science and Engineering)}\hfill {\normalfont 2020 -- 2024 ~\textbar~ CGPA: 9.56}\par
-\linked{University of Allahabad}{https://www.allduniv.ac.in/}\par
+\resumeHeadingListStart
+  \resumeSubheading
+    {\href{https://www.allduniv.ac.in/}{University of Allahabad}}{2020 -- 2024}
+    {B.Tech, Computer Science and Engineering}{CGPA: 9.56}
+\resumeHeadingListEnd
 
-%=====================================================================
-%  PROFESSIONAL EXPERIENCE
-%=====================================================================
-\section{Professional Experience}
+%----------- EXPERIENCE -----------
+\vspace{-2pt}
+\section{Experience}
+\resumeHeadingListStart
+  \resumeSubheading{\href{https://www.microsoft.com/en-us/research/lab/microsoft-research-india/}{Microsoft Research}}{10/2024 -- Present}{Research Fellow}{}
+    \resumeItemListStart
+      \resumeItemPlain{Engineered an end-to-end code autoformalization pipeline in Rust, translating natural-language and informal specs into formally verifiable representations.}
+      \resumeItemPlain{Developing foundational algorithms that exploit reinforcement-learning gradient-optimization dynamics to improve representation efficiency, stability, and generalization.}
+      \resumeItemPlain{Developed an LLM on par with GPT-4o for code generation, instruction-following, and reasoning; post-pretraining and online/offline RL.}
+      \resumeItemPlain{Developed SeleKT, a supervised fine-tuning method that preserves generalization while significantly improving downstream performance.}
+      \resumeItemPlain{Led large-scale training on multi-GPU clusters, optimizing distributed workflows for high-performance code synthesis.}
+    \resumeItemListEnd
 
-\entry{Research Fellow}{07/2024 -- Present}{Microsoft Research}{https://www.microsoft.com/en-us/research/lab/microsoft-research-india/}
-\begin{tight}
-  \item Engineered an \textbf{end-to-end code autoformalization pipeline} in Rust, enabling automated translation of natural language and informal code specifications into formally \textbf{verifiable representations}.
-  \item Developing \textbf{foundational algorithms} that exploit \textbf{reinforcement learning gradient optimization dynamics} to improve representation efficiency, stability, and generalization in large-scale models.
-  \item Developed an LLM performing on par with GPT-4o, focused on code generation, instruction-following, and reasoning; worked on post-pretraining and online/offline RL methods.
-  \item Developed a new supervised fine-tuning method, \textbf{SeleKT}, that preserves generalization while significantly improving downstream task performance.
-  \item \textbf{Led large-scale model training on multi-GPU clusters}, optimizing distributed training workflows and fine-tuning for high-performance code synthesis and execution.
-\end{tight}
+  \resumeSubheading{\href{https://numpy.org/}{NumPy}}{12/2024 -- Present}{Maintainer}{}
+    \resumeItemListStart
+      \resumeItemPlain{Review, merge, and evaluate core PRs affecting dtype architecture, numerical semantics, and cross-platform behavior.}
+      \resumeItemPlain{Maintain core NumPy with a focus on dtype infrastructure, numerical correctness, and long-term maintenance.}
+      \resumeItemPlain{Work with contributors across architectures on portability, performance, and ABI concerns.}
+    \resumeItemListEnd
 
-\entry{Maintainer at NumPy}{07/2024 -- Present}{NumPy}{https://numpy.org/}
-\begin{tight}
-  \item Review, merge, and evaluate core PRs affecting dtype architecture, numerical semantics, and cross-platform behavior.
-  \item Maintain core NumPy with a focus on dtype infrastructure, numerical correctness, and long-term maintenance.
-  \item Work closely with contributors and maintainers across architectures to address portability, performance, and ABI concerns.
-\end{tight}
+  \resumeSubheading{\href{https://quansight.com/}{Quansight}}{07/2024 -- 09/2024}{Open Source Intern -- Numerical Types \& Precision (NumPy OSS)}{}
+    \resumeItemListStart
+      \resumeItemPlain{Led development of NumPy-QuadDType, a cross-platform 128-bit floating-point system for consistent quad precision beyond platform-dependent long double.}
+      \resumeItemPlain{Implemented full dtype ecosystem integration: casting, ufunc dispatch, scalar types, memory model, and serialization.}
+      \resumeItemPlain{Built multi-platform distribution and testing infrastructure handling compiler toolchains, SIMD availability, FMA support, and architecture-specific behavior.}
+    \resumeItemListEnd
 
-\entry{Open Source Intern -- Numerical Types \& Precision (NumPy OSS)}{07/2024 -- 09/2024}{Quansight}{https://quansight.com/}
-\begin{tight}
-  \item Led development of \textbf{NumPy-QuadDType}, a cross-platform 128-bit floating-point system providing consistent quadruple-precision arithmetic beyond platform-dependent long double.
-  \item Implemented full NumPy dtype ecosystem integration: \textbf{casting, ufunc dispatch, scalar types, memory model, and serialization}.
-  \item Built robust multi-platform distribution and testing infrastructure, handling \textbf{compiler toolchains, SIMD availability, FMA support, and architecture-specific numerical behavior}.
-\end{tight}
+  \resumeSubheading{dataX.ai}{05/2022 -- 10/2022}{Machine Learning Engineer Intern}{}
+    \resumeItemListStart
+      \resumeItemPlain{Built deep-learning models for vision and language; created an ONNX conversion API with Triton deployment, cutting VM load by 12\%.}
+      \resumeItemPlain{Wrote custom CUDA kernels for 3D medical-scan processing, achieving a 2x speedup in segmentation over existing GPU solutions.}
+    \resumeItemListEnd
+\resumeHeadingListEnd
 
-\entry{Machine Learning Engineer Intern}{05/2022 -- 10/2022}{dataX.ai}{}
-\begin{tight}
-  \item Developed deep-learning models for business-market growth across Computer Vision and language modelling.
-  \item Engineered a comprehensive API to automate conversion of a pretrained model into ONNX format and its seamless deployment via NVIDIA Triton Server, culminating in a 12\% reduction in VM load.
-  \item Developed custom CUDA kernels to accelerate 3D image processing for medical scans, achieving a 2x speedup in segmentation tasks over existing GPU-based solutions and improving overall throughput.
-\end{tight}
+%----------- PUBLICATIONS -----------
+\vspace{-2pt}
+\section{Publications}
+\resumeItemListStart
+  \resumeItemPlain{\textbf{\href{https://www.microsoft.com/en-us/research/publication/nextcoder-robust-adaptation-of-code-lms-to-diverse-code-edits/}{NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits}} (ICML 2025; ICLR 2025 DL4Code).\\ \textbf{Swayam Singh}, Tushar Aggarwal, et al. A synthetic-data generation pipeline and the SeleKT adaptation algorithm that make code LLMs robust to diverse, real-world code edits.}
+  \resumeItemPlain{\textbf{\href{https://arxiv.org/abs/2407.03941}{Narrow Transformer: StarCoder-Based Java-LM For Desktop}} (arXiv:2407.03941, 2024).\\ Kamalkumar Rathinasamy, \ldots, \textbf{Swayam Singh}, et al. A compact, Java-specialized code language model designed to run efficiently on desktop hardware.}
+  \resumeItemPlain{\textbf{\href{https://arxiv.org/abs/2308.07124}{OctoPack: Instruction Tuning Code Large Language Models}} (ICLR 2024 Spotlight; NeurIPS 2023 Instruction Workshop).\\ Niklas Muennighoff, \ldots, \textbf{Swayam Singh}, et al. Instruction tuning of code models using natural-language Git commits (CommitPack / CommitPackFT).}
+  \resumeItemPlain{\textbf{\href{https://arxiv.org/abs/2305.06161}{StarCoder: May the Source Be With You!}} (TMLR 2023).\\ Raymond Li, \ldots, \textbf{Swayam Singh}, et al.\ (BigCode). A 15.5B-parameter open code LLM trained on 1T tokens of permissively licensed code.}
+\resumeItemListEnd
 
-%=====================================================================
-%  RESEARCH AND PUBLICATION
-%=====================================================================
-\section{Research and Publication}
-\begin{tight}
-  \item \textbf{Swayam Singh} et al. ``\textbf{NextCoder: Robust Learning of Diverse Code Edits}'' arXiv:2503.03656, 2025.\lkicon{https://arxiv.org/abs/2503.03656}
-  \begin{tight}
-    \item Published in \textbf{ICML 2025} main conference \quad\textbar\quad \textbf{ICLR 2025 DL4Code} workshop.
-  \end{tight}
-  \item \textbf{Swayam Singh}, Niklas Muennighoff, et al. ``\textbf{OctoPack: Instruction Tuning Code Large Language Models}'' arXiv:2308.07124, 2023.\lkicon{https://arxiv.org/abs/2308.07124}
-  \begin{tight}
-    \item \textbf{Spotlight (top 5\%)} at \textbf{ICLR 2024} \quad\textbar\quad \textbf{Instruction Workshop} at \textbf{NeurIPS 2023}.
-  \end{tight}
-  \item \textbf{Swayam Singh}, Harm de Vries, et al. ``\textbf{StarCoder: may the source be with you!}'' arXiv:2305.06161, 2023.\lkicon{https://arxiv.org/abs/2305.06161}
-  \begin{tight}
-    \item Published at \textbf{TMLR} (Transactions on Machine Learning Research).
-  \end{tight}
-\end{tight}
-
-%=====================================================================
-%  PROJECTS
-%=====================================================================
+%----------- PROJECTS (kept together on page 2) -----------
+\newpage
 \section{Projects}
+\resumeItemListStart
+  \resumeItem{\href{https://github.com/SwayamInSync/clothes-virtual-try-on}{Virtual Clothing Assistant} (PyTorch)}{An end-to-end virtual try-on system: ResNet101 and UNet for garment/body segmentation, OpenPose for pose estimation, and a PyTorch VITON pipeline for realistic garment warping. Reaches an SSIM of 0.895 and has 500+ GitHub stars.}
+  \resumeItem{\href{https://github.com/SwayamInSync/numpy-quaddtype}{Numpy-QuadDType} (C, C++, Python)}{A cross-platform 128-bit (quadruple-precision) floating-point dtype for NumPy with 100k+ downloads. A portable alternative to long double with full casting, ufunc dispatch, scalar types, and serialization that behaves consistently across compilers and architectures.}
+  \resumeItem{Bare-Bones Inference (CUDA, C++)}{A minimal inference stack with engine-grade features such as batching and scheduling, but serving a single fused megakernel instead of a conventional multi-kernel pipeline. Built DeepSeek-V2 (236B)'s multi-GPU, intra-node megakernel for NVIDIA B200 (sm\_100) GPUs.}
+  \resumeItem{\href{https://github.com/SwayamInSync/QBLAS}{QBLAS} (C, C++)}{A high-performance BLAS library for IEEE-754 binary128 (quadruple) precision, implementing optimized linear-algebra kernels that bring quad-precision numerics to workloads unsupported by standard double-precision libraries.}
+  \resumeItem{\href{https://github.com/SwayamInSync/cpp-verify}{cpp-verify} (C++, LLVM, SMT)}{Extends C++ with first-class formal-verification constructs (pre/post-conditions and invariants), lowering specifications through an LLVM-based pipeline and discharging the resulting proof obligations to SMT solvers.}
+  \resumeItem{\href{https://github.com/swayamInSync/mira}{MIRA -- Multimodal Image Reconstruction with Attention} (PyTorch)}{A transformer-based architecture for single-view text/image-to-3D reconstruction using ViT encoders and triplane decoders with cross-attention. Generates 3D mesh and video in under 10s on an A100, with SDXL-integrated diffusion for end-to-end scene synthesis.}
+\resumeItemListEnd
 
-\linked{Virtual Clothing Assistant}{https://github.com/SwayamInSync/clothes-virtual-try-on}~~{\small[PyTorch, Flask, OpenCV]}~~{\small(500+ {\color{gold}\faStar}~on GitHub)}\par
-\begin{tight}
-  \item Lets users try on different clothes virtually, without going to a trial room.
-  \item Used \textbf{ResNet101} and \textbf{UNet} to segment the cloth and model respectively, with pose estimation via \textbf{OpenPose}; final predictions use the PyTorch implementation of \textbf{VITON}.
-  \item Achieved an \textbf{SSIM} (Structural Similarity Index Metric) of 0.895.
-\end{tight}
+%----------- HONORS & AWARDS -----------
+\vspace{-2pt}
+\section{Honors and Awards}
+\resumeItemListStart
+  \resumeItemPlain{\textbf{2024} --- \textbf{Kaggle Competition Expert}: Bronze medal (top 7\%) in the UBC-OCEAN competition; top 3\% in the \textit{30 Days of ML} challenge.}
+  \resumeItemPlain{\textbf{2024} --- Invited to \textbf{Google Research Week}, Google Research's gathering of AI researchers (keynote by Jeff Dean; sessions on differential privacy, responsible AI, and more).}
+  \resumeItemPlain{\textbf{2024} --- \textbf{OctoPack} accepted as a \textbf{Spotlight (top 5\%)} at ICLR 2024.}
+  \resumeItemPlain{\textbf{2023} --- Selected for the \textbf{Amazon ML Summer School 2023}.}
+  \resumeItemPlain{\textbf{2023} --- \textbf{Clothes Virtual Try-On} crossed 500+ GitHub stars.}
+\resumeItemListEnd
 
-\vspace{1.5pt}
-\linked{Numpy-QuadDType}{https://github.com/SwayamInSync/numpy-quaddtype}\par
-\textbf{A cross-platform Quad (128-bit) float data-type for NumPy.}\par\vspace{1.5pt}
-\begin{tight}
-  \item Core developer and maintainer of a cross-platform 128-bit floating-point data type for NumPy.
-  \item Designed a portable alternative to long double, eliminating architecture- and compiler-dependent irregularities.
-  \item Integrated with NumPy's dtype, casting, and dispatch mechanisms while maintaining performance and correctness.
-\end{tight}
+%----------- INVITED TALKS -----------
+\vspace{-2pt}
+\section{Invited Talks}
+\resumeItemListStart
+  \resumeItemPlain{\textbf{MAMBA: Zero to Hero}, invited talk on State Space Models at Cohere for AI.}
+  \resumeItemPlain{\textbf{Provably-Correct Code and Efficient Sparse Training of LLMs}, internal research talk at Microsoft Research.}
+  \resumeItemPlain{\textbf{Foundations of Machine Learning}, a GDG On-Campus session on the ML landscape, tooling ecosystem, and emerging directions.}
+  \resumeItemPlain{\textbf{From Deep Learning to Large Language Models}, a talk on the foundations of modern AI: deep learning, generative models, and LLMs.}
+\resumeItemListEnd
 
-\vspace{1.5pt}
-\linked{MIRA -- Multimodal Image Reconstruction with Attention}{https://github.com/swayamInSync/mira}\par\vspace{1.5pt}
-\begin{tight}
-  \item Designed a transformer-based multimodal architecture for single-view text/image-to-3D reconstruction using ViT encoders and triplane decoders with cross-attention.
-  \item Enabled fast 3D mesh and video generation from a single image in \textless10 seconds on an A100 GPU, significantly outperforming traditional NeRF pipelines.
-  \item Integrated diffusion-based image generation (SDXL) with structured 3D reconstruction for end-to-end multimodal scene synthesis.
-\end{tight}
-
-%=====================================================================
-%  SKILLS
-%=====================================================================
-\section{Skills}
-\begin{tight}
-  \item Systems programming, numerical computing, cross-platform portability.
-  \item C/C++, Python (NumPy internals), memory management, performance optimization.
-  \item Large-scale open-source development, code review, and long-term maintenance.
-\end{tight}
+%----------- SKILLS (at the end) -----------
+\vspace{-2pt}
+\section{Skills Summary}
+\resumeItemListStart
+  \resumeItem{Languages}{C, C++, CUDA, Python}
+  \resumeItem{ML \& Training}{LLM post-training, reinforcement learning (online/offline RL), supervised fine-tuning, multi-GPU distributed training, code-generation models}
+  \resumeItem{Systems \& GPU}{CUDA kernels and megakernels, high-performance numerical computing, IEEE-754 quad precision, SIMD/FMA, performance optimization}
+  \resumeItem{Tools \& Frameworks}{PyTorch, NumPy (C-API internals), LLVM, SMT solvers}
+  \resumeItem{Open Source}{Core NumPy maintenance, cross-platform C-extension packaging, code review}
+\resumeItemListEnd
 
 \end{document}

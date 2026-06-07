@@ -1,8 +1,10 @@
 # Résumé (LaTeX)
 
-A single-page résumé built from a custom template that mirrors my original design
-(centered name, FontAwesome contact row, ruled section headers, bold-title/right-date
-entries). **Overleaf-ready** — upload `resume.tex` and compile with **pdflatex**.
+A clean, two-page résumé built from a custom LaTeX template (serif body, small-caps
+ruled section headers, bold-title / right-aligned-date entries). Page 1 covers
+Education, Experience, and Publications; page 2 covers Projects, Honors & Awards,
+Invited Talks, and a Skills summary. **Overleaf-ready** — upload `resume.tex` and
+compile with **pdflatex**.
 
 ## Build
 
@@ -16,6 +18,5 @@ The site serves this PDF directly — the sidebar **CV** link (`author.cv` in
 
 ## Customize
 
-- **Accent color:** `\definecolor{accent}{HTML}{1A1A1A}` in the preamble.
-- **Font size** (`9pt`, what keeps it to one page), **margins**, and **spacing** are
-  grouped near the top of `resume.tex`.
+Fonts, margins, spacing, and the section-header / entry macros are grouped in the
+preamble of `resume.tex`.
