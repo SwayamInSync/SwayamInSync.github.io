@@ -42,7 +42,7 @@ My interests sit where machine learning meets systems — making models more cap
 <span class="pub-venue">ICML 2025</span> [**NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits**](https://www.microsoft.com/en-us/research/publication/nextcoder-robust-adaptation-of-code-lms-to-diverse-code-edits/)<br>
 **Swayam Singh**, Tushar Aggarwal, et al.
 
-[**Paper**](https://www.microsoft.com/en-us/research/publication/nextcoder-robust-adaptation-of-code-lms-to-diverse-code-edits/) \| [**Code** ![](https://img.shields.io/github/stars/microsoft/NextCoder?style=social)](https://github.com/microsoft/NextCoder)
+[**Paper**](https://www.microsoft.com/en-us/research/publication/nextcoder-robust-adaptation-of-code-lms-to-diverse-code-edits/) \| [**Code**](https://github.com/microsoft/NextCoder)
 
 - A synthetic-data generation pipeline and the **SeleKT** adaptation algorithm that make code LLMs robust to diverse, real-world code edits.
 - Strong results across **five code-editing benchmarks** while avoiding catastrophic forgetting.
@@ -61,7 +61,7 @@ Kamalkumar Rathinasamy, …, **Swayam Singh**, et al.
 <span class="pub-venue">ICLR 2024 Spotlight</span> [**OctoPack: Instruction Tuning Code Large Language Models**](https://arxiv.org/abs/2308.07124)<br>
 Niklas Muennighoff, …, **Swayam Singh**, et al.
 
-[**arXiv**](https://arxiv.org/abs/2308.07124) \| [**Code** ![](https://img.shields.io/github/stars/bigcode-project/octopack?style=social)](https://github.com/bigcode-project/octopack)
+[**arXiv**](https://arxiv.org/abs/2308.07124) \| [**Code**](https://github.com/bigcode-project/octopack)
 
 - Instruction tuning of code models using natural-language **Git commits** (CommitPack / CommitPackFT).
 - Accepted as a **Spotlight (top 5%)** at ICLR 2024.
@@ -71,7 +71,7 @@ Niklas Muennighoff, …, **Swayam Singh**, et al.
 <span class="pub-venue">TMLR 2023</span> [**StarCoder: May the Source Be With You!**](https://arxiv.org/abs/2305.06161)<br>
 Raymond Li, …, **Swayam Singh**, et al. (BigCode)
 
-[**arXiv**](https://arxiv.org/abs/2305.06161) \| [**Code** ![](https://img.shields.io/github/stars/bigcode-project/starcoder?style=social)](https://github.com/bigcode-project/starcoder)
+[**arXiv**](https://arxiv.org/abs/2305.06161) \| [**Code**](https://github.com/bigcode-project/starcoder)
 
 - A **15.5B-parameter** open code LLM trained on **1T tokens** of permissively licensed code.
 - A widely adopted base model for code-generation research.
@@ -79,7 +79,7 @@ Raymond Li, …, **Swayam Singh**, et al. (BigCode)
 
 # 🚀 Projects
 
-- [**numpy-quaddtype**](https://github.com/SwayamInSync/numpy-quaddtype) — Cross-platform 128-bit quad-precision floating-point dtype for NumPy (100k+ downloads). (C, C++, Python)
+- [**numpy-quaddtype**](https://github.com/SwayamInSync/numpy-quaddtype) — Cross-platform 128-bit quad-precision floating-point dtype for NumPy (100k+ downloads). _(C, C++, Python)_
 - [**QBLAS**](https://github.com/SwayamInSync/QBLAS) — High-performance BLAS for IEEE-754 binary128 (quad) precision. _(C++)_
 - [**cpp-verify**](https://github.com/SwayamInSync/cpp-verify) — Extending C++ with program-verification constructs backed by SMT solvers, on LLVM. _(C++ · LLVM)_
 - [**Clothes Virtual Try-On**](https://github.com/SwayamInSync/clothes-virtual-try-on) — A custom ViTON-based model for a virtual clothing try-on assistant (500+ ⭐). _(PyTorch)_
