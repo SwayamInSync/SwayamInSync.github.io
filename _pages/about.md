@@ -38,10 +38,8 @@ My interests sit where machine learning meets systems — making models more cap
 
 # 📝 Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025</div><img src='images/nextcoder.png' alt="NextCoder" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits](https://www.microsoft.com/en-us/research/publication/nextcoder-robust-adaptation-of-code-lms-to-diverse-code-edits/) \\
+<div class="pub" markdown="1">
+<span class="pub-venue">ICML 2025</span> [**NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits**](https://www.microsoft.com/en-us/research/publication/nextcoder-robust-adaptation-of-code-lms-to-diverse-code-edits/)<br>
 **Swayam Singh**, Tushar Aggarwal, et al.
 
 [**Paper**](https://www.microsoft.com/en-us/research/publication/nextcoder-robust-adaptation-of-code-lms-to-diverse-code-edits/) \| [**Code** ![](https://img.shields.io/github/stars/microsoft/NextCoder?style=social)](https://github.com/microsoft/NextCoder)
@@ -49,24 +47,18 @@ My interests sit where machine learning meets systems — making models more cap
 - A synthetic-data generation pipeline and the **SeleKT** adaptation algorithm that make code LLMs robust to diverse, real-world code edits.
 - Strong results across **five code-editing benchmarks** while avoiding catastrophic forgetting.
 </div>
-</div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2024</div><img src='images/narrow-transformer.png' alt="Narrow Transformer" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Narrow Transformer: StarCoder-Based Java-LM For Desktop](https://arxiv.org/abs/2407.03941) \\
+<div class="pub" markdown="1">
+<span class="pub-venue">arXiv 2024</span> [**Narrow Transformer: StarCoder-Based Java-LM For Desktop**](https://arxiv.org/abs/2407.03941)<br>
 Kamalkumar Rathinasamy, …, **Swayam Singh**, et al.
 
 [**arXiv**](https://arxiv.org/abs/2407.03941)
 
 - A compact, **Java-specialized** code language model designed to run efficiently on desktop hardware.
 </div>
-</div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2024 Spotlight</div><img src='images/octopack.png' alt="OctoPack" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[OctoPack: Instruction Tuning Code Large Language Models](https://arxiv.org/abs/2308.07124) \\
+<div class="pub" markdown="1">
+<span class="pub-venue">ICLR 2024 Spotlight</span> [**OctoPack: Instruction Tuning Code Large Language Models**](https://arxiv.org/abs/2308.07124)<br>
 Niklas Muennighoff, …, **Swayam Singh**, et al.
 
 [**arXiv**](https://arxiv.org/abs/2308.07124) \| [**Code** ![](https://img.shields.io/github/stars/bigcode-project/octopack?style=social)](https://github.com/bigcode-project/octopack)
@@ -74,19 +66,15 @@ Niklas Muennighoff, …, **Swayam Singh**, et al.
 - Instruction tuning of code models using natural-language **Git commits** (CommitPack / CommitPackFT).
 - Accepted as a **Spotlight (top 5%)** at ICLR 2024.
 </div>
-</div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TMLR 2023</div><img src='images/starcoder.png' alt="StarCoder" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[StarCoder: May the Source Be With You!](https://arxiv.org/abs/2305.06161) \\
+<div class="pub" markdown="1">
+<span class="pub-venue">TMLR 2023</span> [**StarCoder: May the Source Be With You!**](https://arxiv.org/abs/2305.06161)<br>
 Raymond Li, …, **Swayam Singh**, et al. (BigCode)
 
 [**arXiv**](https://arxiv.org/abs/2305.06161) \| [**Code** ![](https://img.shields.io/github/stars/bigcode-project/starcoder?style=social)](https://github.com/bigcode-project/starcoder)
 
 - A **15.5B-parameter** open code LLM trained on **1T tokens** of permissively licensed code.
 - A widely adopted base model for code-generation research.
-</div>
 </div>
 
 # 🚀 Projects
