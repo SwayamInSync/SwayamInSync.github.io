@@ -33,16 +33,28 @@
       var items = Array.prototype.slice.call(doc.getElementsByTagName("item"));
       if (!items.length) throw new Error("no items");
 
-      var frag = document.createDocumentFragment();
-      items.slice(0, 3).forEach(function (it) {
+      var posts = items.map(function (it) {
         var enc = it.getElementsByTagName("enclosure")[0] || it.getElementsByTagName("media:content")[0];
-        var title = txt(it, "title");
-        var link = txt(it, "link") || BLOG;
-        var date = fmtDate(txt(it, "pubDate"));
-        var cats = Array.prototype.map.call(it.getElementsByTagName("category"), function (c) {
-          return c.textContent.trim();
-        }).slice(0, 3);
-        var img = enc ? abs(enc.getAttribute("url") || "") : "";
+        return {
+          title: txt(it, "title"),
+          link: txt(it, "link") || BLOG,
+          date: fmtDate(txt(it, "pubDate")),
+          cats: Array.prototype.map.call(it.getElementsByTagName("category"), function (c) {
+            return c.textContent.trim();
+          }),
+          img: enc ? abs(enc.getAttribute("url") || "") : "",
+        };
+      }).filter(function (p) {
+        // skip work-in-progress posts tagged "ongoing" (any case)
+        return !p.cats.some(function (c) { return c.toLowerCase() === "ongoing"; });
+      }).slice(0, 3);
+
+      if (!posts.length) throw new Error("no completed posts");
+
+      var frag = document.createDocumentFragment();
+      posts.forEach(function (p) {
+        var title = p.title, link = p.link, date = p.date, img = p.img;
+        var cats = p.cats.slice(0, 3);
 
         var a = document.createElement("a");
         a.className = "blog-card";
