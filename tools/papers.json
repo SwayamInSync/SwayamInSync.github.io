@@ -1,0 +1,6 @@
+[
+  { "slug": "nextcoder",          "badge": "ICML 2025",          "pdf_url": "" },
+  { "slug": "narrow-transformer", "badge": "arXiv 2024",         "arxiv": "2407.03941" },
+  { "slug": "octopack",           "badge": "ICLR 2024 Spotlight", "arxiv": "2308.07124" },
+  { "slug": "starcoder",          "badge": "TMLR 2023",          "arxiv": "2305.06161" }
+]

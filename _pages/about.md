@@ -38,10 +38,7 @@ My interests sit where machine learning meets systems — making models more cap
 
 # 📝 Publications 
 
-<!-- 🚧 MARKER: each paper uses a placeholder figure (images/500x300.png). Drop a real
-     teaser image into images/ (e.g. images/nextcoder.png) and update the <img src> below. -->
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025</div><img src='images/500x300.png' alt="NextCoder" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025</div><img src='images/nextcoder.png' alt="NextCoder" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits](https://www.microsoft.com/en-us/research/publication/nextcoder-robust-adaptation-of-code-lms-to-diverse-code-edits/) \\
@@ -54,11 +51,11 @@ Tushar Aggarwal, **Swayam Singh**, Abhijeet Awasthi, Aditya Kanade, Nagarajan Na
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2024</div><img src='images/500x300.png' alt="Narrow Transformer" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2024</div><img src='images/narrow-transformer.png' alt="Narrow Transformer" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Narrow Transformer: StarCoder-Based Java-LM For Desktop](https://arxiv.org/abs/2407.03941) \\
-**Swayam Singh**, Karthik Rathinasamy, et al. <!-- 🚧 MARKER: confirm full author list -->
+Kamalkumar Rathinasamy, Balaji A J, Ankush Kumar, Gagan Gayari, Harshini K, Rajab Ali Mondal, Sreenivasa Raghavan K S, **Swayam Singh**, Mohammed Rafee Tarafdar
 
 [**arXiv**](https://arxiv.org/abs/2407.03941)
 
@@ -66,11 +63,11 @@ Tushar Aggarwal, **Swayam Singh**, Abhijeet Awasthi, Aditya Kanade, Nagarajan Na
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2024 Spotlight</div><img src='images/500x300.png' alt="OctoPack" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2024 Spotlight</div><img src='images/octopack.png' alt="OctoPack" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [OctoPack: Instruction Tuning Code Large Language Models](https://arxiv.org/abs/2308.07124) \\
-Niklas Muennighoff, &hellip;, **Swayam Singh**, et al. <!-- 🚧 MARKER: confirm author ordering -->
+Niklas Muennighoff, Qian Liu, Armel Zebaze, Qinkai Zheng, Binyuan Hui, Terry Yue Zhuo, **Swayam Singh**, et al.
 
 [**arXiv**](https://arxiv.org/abs/2308.07124) \| [**Code** ![](https://img.shields.io/github/stars/bigcode-project/octopack?style=social)](https://github.com/bigcode-project/octopack)
 
@@ -79,11 +76,11 @@ Niklas Muennighoff, &hellip;, **Swayam Singh**, et al. <!-- 🚧 MARKER: confirm
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TMLR 2023</div><img src='images/500x300.png' alt="StarCoder" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TMLR 2023</div><img src='images/starcoder.png' alt="StarCoder" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [StarCoder: May the Source Be With You!](https://arxiv.org/abs/2305.06161) \\
-Raymond Li, &hellip;, **Swayam Singh**, et al. (BigCode) <!-- 🚧 MARKER: confirm author ordering -->
+Raymond Li, Loubna Ben Allal, Yangtian Zi, &hellip;, **Swayam Singh**, et al. (BigCode)
 
 [**arXiv**](https://arxiv.org/abs/2305.06161) \| [**Code** ![](https://img.shields.io/github/stars/bigcode-project/starcoder?style=social)](https://github.com/bigcode-project/starcoder)
 
