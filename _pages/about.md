@@ -42,7 +42,7 @@ My interests sit where machine learning meets systems — making models more cap
 <div class='paper-box-text' markdown="1">
 
 [NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits](https://www.microsoft.com/en-us/research/publication/nextcoder-robust-adaptation-of-code-lms-to-diverse-code-edits/) \\
-Tushar Aggarwal, **Swayam Singh**, Abhijeet Awasthi, Aditya Kanade, Nagarajan Natarajan
+**Swayam Singh**, Tushar Aggarwal, et al.
 
 [**Paper**](https://www.microsoft.com/en-us/research/publication/nextcoder-robust-adaptation-of-code-lms-to-diverse-code-edits/) \| [**Code** ![](https://img.shields.io/github/stars/microsoft/NextCoder?style=social)](https://github.com/microsoft/NextCoder)
 
@@ -55,7 +55,7 @@ Tushar Aggarwal, **Swayam Singh**, Abhijeet Awasthi, Aditya Kanade, Nagarajan Na
 <div class='paper-box-text' markdown="1">
 
 [Narrow Transformer: StarCoder-Based Java-LM For Desktop](https://arxiv.org/abs/2407.03941) \\
-Kamalkumar Rathinasamy, Balaji A J, Ankush Kumar, Gagan Gayari, Harshini K, Rajab Ali Mondal, Sreenivasa Raghavan K S, **Swayam Singh**, Mohammed Rafee Tarafdar
+Kamalkumar Rathinasamy, …, **Swayam Singh**, et al.
 
 [**arXiv**](https://arxiv.org/abs/2407.03941)
 
@@ -67,7 +67,7 @@ Kamalkumar Rathinasamy, Balaji A J, Ankush Kumar, Gagan Gayari, Harshini K, Raja
 <div class='paper-box-text' markdown="1">
 
 [OctoPack: Instruction Tuning Code Large Language Models](https://arxiv.org/abs/2308.07124) \\
-Niklas Muennighoff, Qian Liu, Armel Zebaze, Qinkai Zheng, Binyuan Hui, Terry Yue Zhuo, **Swayam Singh**, et al.
+Niklas Muennighoff, …, **Swayam Singh**, et al.
 
 [**arXiv**](https://arxiv.org/abs/2308.07124) \| [**Code** ![](https://img.shields.io/github/stars/bigcode-project/octopack?style=social)](https://github.com/bigcode-project/octopack)
 
@@ -80,7 +80,7 @@ Niklas Muennighoff, Qian Liu, Armel Zebaze, Qinkai Zheng, Binyuan Hui, Terry Yue
 <div class='paper-box-text' markdown="1">
 
 [StarCoder: May the Source Be With You!](https://arxiv.org/abs/2305.06161) \\
-Raymond Li, Loubna Ben Allal, Yangtian Zi, &hellip;, **Swayam Singh**, et al. (BigCode)
+Raymond Li, …, **Swayam Singh**, et al. (BigCode)
 
 [**arXiv**](https://arxiv.org/abs/2305.06161) \| [**Code** ![](https://img.shields.io/github/stars/bigcode-project/starcoder?style=social)](https://github.com/bigcode-project/starcoder)
 

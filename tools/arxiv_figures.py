@@ -219,13 +219,25 @@ def score_png(path, ref_order):
     return s
 
 
+def format_authors(authors, me="swayam"):
+    """Show only the first author and me (bolded): 'First, …, **Me**, et al.'."""
+    if not authors:
+        return "AUTHORS — fill in"
+    idx = next((i for i, a in enumerate(authors) if me in a.lower()), None)
+    if idx is None:
+        return authors[0] + (", et al." if len(authors) > 1 else "")
+    if idx == 0:                               # I'm (joint) first author
+        out = f"**{authors[0]}**"
+        if len(authors) > 1:
+            out += ", " + authors[1]
+        return out + (", et al." if len(authors) > 2 else "")
+    sep = ", …, " if idx > 1 else ", "
+    out = f"{authors[0]}{sep}**{authors[idx]}**"
+    return out + (", et al." if idx < len(authors) - 1 else "")
+
+
 def snippet(slug, badge, title, authors, arxiv_id):
-    names = []
-    for a in authors:
-        names.append(f"**{a}**" if "swayam" in a.lower() else a)
-    if len(names) > 12:
-        names = names[:12] + ["et al."]
-    auth = ", ".join(names) if names else "AUTHORS — fill in"
+    auth = format_authors(authors)
     url = f"https://arxiv.org/abs/{arxiv_id}" if arxiv_id else ""
     arxiv_link = f"[**arXiv**]({url})" if arxiv_id else ""
     return f"""<div class='paper-box'><div class='paper-box-image'><div><div class="badge">{badge}</div><img src='images/{slug}.png' alt="{slug}" width="100%"></div></div>
