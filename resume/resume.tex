@@ -43,7 +43,7 @@
     \begin{tabular*}{0.99\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       {\small #3} & {\small #4} \\
-    \end{tabular*}\vspace{-4pt}}
+    \end{tabular*}\vspace{-1pt}}
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}}
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -83,14 +83,15 @@
 \resumeHeadingListStart
   \resumeSubheading{\href{https://www.microsoft.com/en-us/research/lab/microsoft-research-india/}{Microsoft Research}}{10/2024 -- Present}{Research Fellow}{}
     \resumeItemListStart
-      \resumeItemPlain{Engineered an end-to-end code autoformalization pipeline in Rust, translating natural-language and informal specs into formally verifiable representations.}
+      \resumeItemPlain{Developed \& trained the world's first model and training pipeline for End-To-End Autoformalization and verification of programs in Rust}
+      \resumeItemPlain{Engineered the mid-training and post-training recipe for model learn formalizing program with formal guarantee, translating natural-language and informal specs into formally verifiable representations.}
       \resumeItemPlain{Developing foundational algorithms that exploit reinforcement-learning gradient-optimization dynamics to improve representation efficiency, stability, and generalization.}
-      \resumeItemPlain{Developed an LLM on par with GPT-4o for code generation, instruction-following, and reasoning; post-pretraining and online/offline RL.}
+      \resumeItemPlain{Developed an LLM on par with Gemini and GPT-4o for code generation, instruction-following, and reasoning; post-pretraining and online/offline RL.}
       \resumeItemPlain{Developed SeleKT, a supervised fine-tuning method that preserves generalization while significantly improving downstream performance.}
       \resumeItemPlain{Led large-scale training on multi-GPU clusters, optimizing distributed workflows for high-performance code synthesis.}
     \resumeItemListEnd
 
-  \resumeSubheading{\href{https://numpy.org/}{NumPy}}{12/2024 -- Present}{Maintainer}{}
+  \resumeSubheading{\href{https://numpy.org/}{NumPy (numpy-quaddtype)}}{12/2024 -- Present}{Maintainer}{}
     \resumeItemListStart
       \resumeItemPlain{Review, merge, and evaluate core PRs affecting dtype architecture, numerical semantics, and cross-platform behavior.}
       \resumeItemPlain{Maintain core NumPy with a focus on dtype infrastructure, numerical correctness, and long-term maintenance.}
@@ -109,6 +110,11 @@
       \resumeItemPlain{Built deep-learning models for vision and language; created an ONNX conversion API with Triton deployment, cutting VM load by 12\%.}
       \resumeItemPlain{Wrote custom CUDA kernels for 3D medical-scan processing, achieving a 2x speedup in segmentation over existing GPU solutions.}
     \resumeItemListEnd
+
+  \resumeSubheading{Scaler (InterviewBit)}{2022}{Data Science Intern}{}
+    \resumeItemListStart
+      \resumeItemPlain{Built predictive models and data-preprocessing automation, improving user engagement by \textasciitilde25\%.}
+    \resumeItemListEnd
 \resumeHeadingListEnd
 
 %----------- PUBLICATIONS -----------
@@ -118,11 +124,11 @@
   \resumeItemPlain{\textbf{\href{https://www.microsoft.com/en-us/research/publication/nextcoder-robust-adaptation-of-code-lms-to-diverse-code-edits/}{NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits}} (ICML 2025; ICLR 2025 DL4Code).\\ \textbf{Swayam Singh}, Tushar Aggarwal, et al. A synthetic-data generation pipeline and the SeleKT adaptation algorithm that make code LLMs robust to diverse, real-world code edits.}
   \resumeItemPlain{\textbf{\href{https://arxiv.org/abs/2407.03941}{Narrow Transformer: StarCoder-Based Java-LM For Desktop}} (arXiv:2407.03941, 2024).\\ Kamalkumar Rathinasamy, \ldots, \textbf{Swayam Singh}, et al. A compact, Java-specialized code language model designed to run efficiently on desktop hardware.}
   \resumeItemPlain{\textbf{\href{https://arxiv.org/abs/2308.07124}{OctoPack: Instruction Tuning Code Large Language Models}} (ICLR 2024 Spotlight; NeurIPS 2023 Instruction Workshop).\\ Niklas Muennighoff, \ldots, \textbf{Swayam Singh}, et al. Instruction tuning of code models using natural-language Git commits (CommitPack / CommitPackFT).}
+  \newpage
   \resumeItemPlain{\textbf{\href{https://arxiv.org/abs/2305.06161}{StarCoder: May the Source Be With You!}} (TMLR 2023).\\ Raymond Li, \ldots, \textbf{Swayam Singh}, et al.\ (BigCode). A 15.5B-parameter open code LLM trained on 1T tokens of permissively licensed code.}
 \resumeItemListEnd
 
-%----------- PROJECTS (kept together on page 2) -----------
-\newpage
+%----------- PROJECTS (flows immediately after publications) -----------
 \section{Projects}
 \resumeItemListStart
   \resumeItem{\href{https://github.com/SwayamInSync/clothes-virtual-try-on}{Virtual Clothing Assistant} (PyTorch)}{An end-to-end virtual try-on system: ResNet101 and UNet for garment/body segmentation, OpenPose for pose estimation, and a PyTorch VITON pipeline for realistic garment warping. Reaches an SSIM of 0.895 and has 500+ GitHub stars.}
