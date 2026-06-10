@@ -39,13 +39,13 @@ My interests sit where machine learning meets systems: making models more capabl
 # 📝 Publications
 
 <div class="pub" markdown="1">
-<span class="pub-venue">ICML 2025</span> [**NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits**](https://www.microsoft.com/en-us/research/publication/nextcoder-robust-adaptation-of-code-lms-to-diverse-code-edits/)<br>
+<span class="pub-venue">ICML 2025 · ICLR 2025 DL4Code</span> [**NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits**](https://www.microsoft.com/en-us/research/publication/nextcoder-robust-adaptation-of-code-lms-to-diverse-code-edits/)<br>
 **Swayam Singh**, Tushar Aggarwal, et al.
 
 [**Paper**](https://www.microsoft.com/en-us/research/publication/nextcoder-robust-adaptation-of-code-lms-to-diverse-code-edits/) \| [**Code**](https://github.com/microsoft/NextCoder)
 
-- A synthetic-data generation pipeline and the **SeleKT** adaptation algorithm that make code LLMs robust to diverse, real-world code edits.
-- Strong results across **five code-editing benchmarks** while avoiding catastrophic forgetting.
+- A synthetic-data generation pipeline and **SeleKT** (Selective Knowledge Transfer), a new fine-tuning algorithm that makes code LLMs robust to diverse, real-world code edits.
+- Our **32B** model matches **Gemini** and beats **GPT-4o** on harder tasks like **aider-polyglot** — achieved purely via **SFT**, with SeleKT substantially reducing catastrophic forgetting compared to other methods.
 </div>
 
 <div class="pub" markdown="1">
@@ -58,7 +58,7 @@ Kamalkumar Rathinasamy, …, **Swayam Singh**, et al.
 </div>
 
 <div class="pub" markdown="1">
-<span class="pub-venue">ICLR 2024 Spotlight</span> [**OctoPack: Instruction Tuning Code Large Language Models**](https://arxiv.org/abs/2308.07124)<br>
+<span class="pub-venue">ICLR 2024 Spotlight · NeurIPS 2023 Instruction Workshop</span> [**OctoPack: Instruction Tuning Code Large Language Models**](https://arxiv.org/abs/2308.07124)<br>
 Niklas Muennighoff, …, **Swayam Singh**, et al.
 
 [**arXiv**](https://arxiv.org/abs/2308.07124) \| [**Code**](https://github.com/bigcode-project/octopack)
