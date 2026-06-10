@@ -79,11 +79,12 @@ Raymond Li, …, **Swayam Singh**, et al. (BigCode)
 
 # 🚀 Projects
 
-- [**numpy-quaddtype**](https://github.com/SwayamInSync/numpy-quaddtype) — Cross-platform 128-bit quad-precision floating-point dtype for NumPy (100k+ downloads). _(C, C++, Python)_
-- [**QBLAS**](https://github.com/SwayamInSync/QBLAS) — High-performance BLAS for IEEE-754 binary128 (quad) precision. _(C++)_
-- [**cpp-verify**](https://github.com/SwayamInSync/cpp-verify) — Extending C++ with program-verification constructs backed by SMT solvers, on LLVM. _(C++ · LLVM)_
-- [**Clothes Virtual Try-On**](https://github.com/SwayamInSync/clothes-virtual-try-on) — A custom ViTON-based model for a virtual clothing try-on assistant (500+ ⭐). _(PyTorch)_
-- [**MIRA**](https://github.com/swayamInSync/mira) — Multimodal Image Reconstruction with Attention: transformer-based 2D-to-3D reconstruction. _(PyTorch)_
+- [**numpy-quaddtype**](https://github.com/SwayamInSync/numpy-quaddtype) — Cross-platform 128-bit (quad-precision) floating-point dtype for NumPy (100k+ downloads); a portable alternative to long double with full casting, ufunc dispatch, scalar types, and serialization that behaves consistently across compilers and architectures. _(C, C++, Python)_
+- [**Bare-Bones Inference**](https://github.com/SwayamInSync/bare-bones) — An inference stack with engine-grade batching and scheduling that serves a single fused megakernel instead of a multi-kernel pipeline. Built DeepSeek-V2 (236B)'s block-scaled FP8-quantized, multi-GPU megakernel for NVIDIA B200 (sm_100) GPUs that fuses all computation and TP/EP communication into one kernel via `multimem` PTX multicast writes; achieves 13.05 ms/token decode, beating vLLM at B=1 by 2× and eager mode by >10×. _(CuTeDSL, PTX)_
+- [**QBLAS**](https://github.com/SwayamInSync/QBLAS) — High-performance BLAS for IEEE-754 binary128 (quad) precision, with optimized linear-algebra kernels that bring quad-precision numerics to workloads unsupported by standard double-precision libraries. _(C++)_
+- [**cpp-verify**](https://github.com/SwayamInSync/cpp-verify) — Extends C++ with first-class formal-verification constructs (pre/post-conditions and invariants), lowering specifications through an LLVM-based pipeline and discharging the resulting proof obligations to SMT solvers. _(C++ · LLVM · SMT)_
+- [**Clothes Virtual Try-On**](https://github.com/SwayamInSync/clothes-virtual-try-on) — An end-to-end virtual try-on system: ResNet101/UNet garment-body segmentation, OpenPose pose estimation, and a PyTorch VITON warping pipeline (SSIM 0.895, 500+ ⭐). _(PyTorch)_
+- [**MIRA**](https://github.com/swayamInSync/mira) — Multimodal Image Reconstruction with Attention: transformer-based single-view text/image-to-3D using ViT encoders and triplane decoders with cross-attention; generates 3D mesh and video in under 10s on an A100. _(PyTorch)_
 
 # ✍️ Latest Blogs
 
