@@ -11,18 +11,37 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Backstop: without this the job inherits GitHub's 6h cap, and a crawl that
+    # hangs burns 6h of Actions minutes before being cancelled.
+    timeout-minutes: 20
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
+    - name: Install dependencies
+      run: pip3 install -r ./google_scholar_crawler/requirements.txt
     - name: Run crawler
+      # Google Scholar rate-limits CI runners; `scholarly` then retries forever
+      # with no timeout. Cap each attempt and retry a few times instead.
       run: |
         cd ./google_scholar_crawler
-        pip3 install -r requirements.txt
-        python3 main.py
-        cd ./results
+        attempt=0
+        until timeout 240 python3 -u main.py; do
+          attempt=$((attempt + 1))
+          if [ "$attempt" -ge 3 ]; then
+            echo "::error::Google Scholar crawl failed or timed out after $attempt attempts"
+            exit 1
+          fi
+          echo "Crawl attempt $attempt failed or timed out — retrying in 90s"
+          sleep 90
+        done
+      env:
+        GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+    - name: Publish citation data
+      run: |
+        cd ./google_scholar_crawler/results
         git init
         git config --local user.name "${GITHUB_ACTOR}"
         git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
@@ -30,5 +49,3 @@ jobs:
         git add *.json
         git commit -m "Updated Citation Data"
         git push "${remote_repo}" HEAD:google-scholar-stats --force
-      env:
-        GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}

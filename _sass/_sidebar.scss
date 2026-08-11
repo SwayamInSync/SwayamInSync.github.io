@@ -253,6 +253,48 @@
   }
 }
 
+/* Two-CV row: a "CV" label followed by a pair of small pill links. */
+.author__cv {
+  white-space: normal;
+  margin-bottom: 5px;
+
+  .author__cv-label {
+    display: block;
+    font-size: $type-size-5;
+    padding-top: 2px;
+  }
+
+  /* Pills sit on their own line, indented to align with the label text that
+     follows the fixed-width icon — the sidebar is too narrow for one row. */
+  .author__cv-links {
+    display: block;
+    padding-left: 1.7em;
+  }
+
+  .author__cv-btn {
+    display: inline-block;
+    margin: 2px 4px 2px 0;
+    padding: 1px 8px;
+    border: 1px solid mix($light-gray, $lighter-gray, 50%);
+    border-radius: 10px;
+    background: $lighter-gray;
+    color: inherit;
+    font-size: $type-size-7;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    -webkit-transition: $global-transition;
+    transition: $global-transition;
+
+    &:hover,
+    &:focus {
+      background: mix(#000, $lighter-gray, 6%);
+      border-color: $light-gray;
+      text-decoration: none;
+    }
+  }
+}
+
 .author__urls_sm{
   padding: .25em;
   font-size: 1.75em;

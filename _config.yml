@@ -39,7 +39,12 @@ author:
   foursquare       :
   github           : "SwayamInSync"
   kaggle           : "swayamsingh"
-  cv               : "/resume/resume.pdf"
+  cv               : "/resume/resume.pdf"        # primary CV (research)
+  cv_label         : "Research"
+  cv_title         : "Research CV — publications, projects, and talks"
+  cv_alt           : "/resume/infra_resume.pdf"  # second CV; omit to show a single CV link
+  cv_alt_label     : "Infra"
+  cv_alt_title     : "Infrastructure CV — GPU systems and ML platform engineering"
   google_plus      :
   keybase          :
   instagram        :

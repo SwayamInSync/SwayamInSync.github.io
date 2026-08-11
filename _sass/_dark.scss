@@ -88,6 +88,13 @@ $dk-heading: #e8eaed;
   .author__urls:after  { border-color: $dk-surface transparent; }
   .author__urls a { color: $dk-text; }
   .author__urls a:hover { color: #ffffff; }
+  .author__cv .author__cv-btn {
+    background: $dk-surface; border-color: $dk-border; color: $dk-muted;
+  }
+  .author__cv .author__cv-btn:hover,
+  .author__cv .author__cv-btn:focus {
+    background: mix(#fff, $dk-surface, 8%); border-color: #3a4150; color: #ffffff;
+  }
   .author__urls-wrapper button { background-color: $dk-surface; color: $dk-text; border-color: $dk-border; }
 
   /* inline + block code */

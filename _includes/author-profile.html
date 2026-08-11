@@ -29,7 +29,17 @@
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
       {% endif %}
       {% if author.cv %}
-        <li><a href="{{ author.cv }}"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> CV</a></li>
+        {% if author.cv_alt %}
+          <li class="author__cv">
+            <span class="author__cv-label"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> CV</span>
+            <span class="author__cv-links">
+              <a class="author__cv-btn" href="{{ author.cv }}" title="{{ author.cv_title | default: 'Research CV (PDF)' }}">{{ author.cv_label | default: 'Research' }}</a>
+              <a class="author__cv-btn" href="{{ author.cv_alt }}" title="{{ author.cv_alt_title | default: 'Infrastructure CV (PDF)' }}">{{ author.cv_alt_label | default: 'Infra' }}</a>
+            </span>
+          </li>
+        {% else %}
+          <li><a href="{{ author.cv }}"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> CV</a></li>
+        {% endif %}
       {% endif %}
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>
@@ -130,7 +140,10 @@
         <a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>
       {% endif %}
       {% if author.cv %}
-        <a href="{{ author.cv }}"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i></a>
+        <a href="{{ author.cv }}" title="{{ author.cv_title | default: 'Research CV (PDF)' }}" aria-label="{{ author.cv_title | default: 'Research CV (PDF)' }}"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if author.cv_alt %}
+        <a href="{{ author.cv_alt }}" title="{{ author.cv_alt_title | default: 'Infrastructure CV (PDF)' }}" aria-label="{{ author.cv_alt_title | default: 'Infrastructure CV (PDF)' }}"><i class="fas fa-fw fa-server" aria-hidden="true"></i></a>
       {% endif %}
       {% if author.keybase %}
         <a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i></a>
