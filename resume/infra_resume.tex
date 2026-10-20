@@ -26,7 +26,7 @@
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.45in}
-\addtolength{\textheight}{1in}
+\addtolength{\textheight}{1.1in}
 
 \urlstyle{rm}
 \raggedbottom
@@ -46,11 +46,17 @@
       {\small #3} & {\small #4} \\
     \end{tabular*}\vspace{-1pt}}
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}}
+% Extra role under the same company (LinkedIn-style grouping): role left, dates right.
+\newcommand{\resumeRoleHeading}[2]{%
+  \vspace{1pt}\item[]
+    \begin{tabular*}{0.99\textwidth}{l@{\extracolsep{\fill}}r}
+      {\small #1} & {\small #2} \\
+    \end{tabular*}\vspace{-1pt}}
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}, itemsep=3pt, topsep=3pt, parsep=0pt]}
 \newcommand{\resumeHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.3em, label=$\bullet$, itemsep=1.5pt, topsep=2pt, parsep=0pt]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.3em, label=$\bullet$, itemsep=1pt, topsep=2pt, parsep=0pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 \begin{document}
@@ -70,23 +76,33 @@
   \href{https://scholar.google.com/citations?user=clLJfm8AAAAJ}{\faGraduationCap~Google Scholar}
 \end{center}
 
-%----------- SUMMARY -----------
-\section{Summary}
-\vspace{-1pt}
-{\small GPU-systems and ML-platform engineer focused on multi-node / multi-GPU training and inference: CUDA kernels and megakernels, distributed serving internals (vLLM), cross-rank GPU communication, and Kubernetes-managed B200 GPU clusters.}
-\vspace{4pt}
-
 %----------- EXPERIENCE -----------
 \vspace{-2pt}
 \section{Experience}
 \resumeHeadingListStart
-  \resumeSubheading{\href{https://www.microsoft.com/en-us/research/lab/microsoft-research-india/}{Microsoft Research}}{07/2024 -- Present}{Research Fellow}{}
+  \resumeSubheading{\href{https://quansight.com/}{Quansight}}{}{Software Engineer II $\cdot$ Full-time}{07/2026 -- Present}
     \resumeItemListStart
-      \resumeItemPlain{Managed multi-node distributed training workloads on Kubernetes across Microsoft's NVIDIA B200 GPU clusters: pod scheduling, GPU resource allocation, and distributed-throughput optimization for large-scale code-model training.}
-      \resumeItemPlain{Engineered a fused multi-GPU inference megakernel for DeepSeek-V2 (236B) on NVIDIA B200, merging all compute with tensor/expert-parallel communication into one kernel; handled cross-rank exchange via multimem PTX multicast (direct peer-to-peer NVLink writes), with block-scaled FP8, warp specialization, and mbarrier-based synchronization.}
-      \resumeItemPlain{Trained an LLM on par with Gemini and GPT-4o for code generation, instruction-following, and reasoning via post-pretraining and online/offline RL.}
-      \resumeItemPlain{Built the world's first model and pipeline for end-to-end autoformalization and verification of Rust programs; the GRPO-based RL recipe (with multiplicative gating rewards) lifted the verified-program rate from 1\% to 47\% over the SFT baseline; our 4B Verus-LM outperforms Kimi-K2.5 (1T) on competitive benchmarks.}
-      \resumeItemPlain{Developing foundational algorithms that exploit reinforcement-learning gradient-optimization dynamics to improve representation efficiency, stability, and generalization.}
+      \resumeItemPlain{Re-architected vLLM's multi-process serving stack into a single free-threaded (no-GIL) process, cutting inter-engine coordination overhead $\sim$13.3x and P99 inter-token latency from $\sim$540 ms to $\sim$112 ms.}
+      \resumeItemPlain{Contribute upstream to CPython, NumPy, PyTorch, and CuPy, ensuring compatibility, correctness, and performance across the scientific Python and AI stack.}
+    \resumeItemListEnd
+  \resumeRoleHeading{Open Source Intern -- Numerical Types \& Precision (NumPy OSS) $\cdot$ Internship}{07/2024 -- 09/2024}
+    \resumeItemListStart
+      \resumeItemPlain{Built multi-platform distribution and testing infrastructure handling compiler toolchains, SIMD availability, FMA support, and architecture-specific behavior.}
+      \resumeItemPlain{Led development of NumPy-QuadDType (cross-platform 128-bit float dtype); implemented casting, ufunc dispatch, scalar types, memory model, and serialization.}
+    \resumeItemListEnd
+
+  \resumeSubheading{\href{https://neocambrian.ai/}{Neocambrian AI}}{}{Member of Technical Staff -- Reinforcement Learning}{}
+    \resumeItemListStart
+      \resumeItemPlain{Design and build RL environments for cybersecurity, AI research, robot policy control, and vision reasoning on sandboxed, containerized execution with scalable parallel-rollout infrastructure.}
+      \resumeItemPlain{Engineered verifiable, hacking-resistant reward pipelines: programmatic exploit checks for attacks on simulated hardware (e.g., DMA), cryptographic schemes, sandbox escapes, and planted cache-eviction bugs; automated grading of end-to-end ML experiments; and grounded answer verification.}
+      \resumeItemPlain{Building a Physical AI RSI (recursive self-improvement) framework for robot policy learning, where policies generate their own simulated experience to drive successive rounds of policy and reward refinement.}
+    \resumeItemListEnd
+
+  \resumeSubheading{\href{https://www.microsoft.com/en-us/research/lab/microsoft-research-india/}{Microsoft Research}}{07/2024 -- 06/2026}{Research Fellow}{}
+    \resumeItemListStart
+      \resumeItemPlain{Ran multi-node distributed training on Kubernetes across NVIDIA B200 clusters: pod scheduling, GPU resource allocation, and distributed-throughput optimization for large-scale code-model training.}
+      \resumeItemPlain{Built the world's first end-to-end autoformalization and verification pipeline for Rust: a GRPO-based RL recipe lifted verified programs from 1\% to 47\% over SFT; our 4B Verus-LM beats Kimi-K2.5 (1T). Also trained an LLM on par with Gemini and GPT-4o via online/offline RL.}
+      \resumeItemPlain{Engineered a fused multi-GPU inference megakernel for DeepSeek-V2 (236B) on B200, merging all compute and TP/EP communication into one kernel via multimem PTX multicast, block-scaled FP8, and warp specialization.}
     \resumeItemListEnd
 
   \resumeSubheading{\href{https://numpy.org/}{NumPy (numpy-quaddtype)}}{12/2024 -- Present}{Maintainer}{}
@@ -94,12 +110,6 @@
       \resumeItemPlain{Authored and maintain a cross-platform, true IEEE-compliant 128-bit quadruple-precision floating-point data type for NumPy, along with corresponding efficient and performant BLAS routines.}
       \resumeItemPlain{Review and merge core PRs affecting dtype architecture, numerical semantics, and cross-platform behavior; focus on dtype infrastructure, numerical correctness, and long-term ABI stability.}
       \resumeItemPlain{Work with contributors across architectures on portability, performance, and ABI concerns.}
-    \resumeItemListEnd
-
-  \resumeSubheading{\href{https://quansight.com/}{Quansight}}{07/2024 -- 09/2024}{Open Source Intern -- Numerical Types \& Precision (NumPy OSS)}{}
-    \resumeItemListStart
-      \resumeItemPlain{Built multi-platform distribution and testing infrastructure handling compiler toolchains, SIMD availability, FMA support, and architecture-specific behavior.}
-      \resumeItemPlain{Led development of NumPy-QuadDType (cross-platform 128-bit float dtype); implemented casting, ufunc dispatch, scalar types, memory model, and serialization.}
     \resumeItemListEnd
 
   \resumeSubheading{dataX.ai}{05/2022 -- 10/2022}{Machine Learning Engineer Intern}{}
@@ -120,8 +130,6 @@
   \resumeItem{\href{https://github.com/numpy/numpy-quaddtype}{Numpy-QuadDType} (C, C++, Python)}{A cross-platform 128-bit (quadruple-precision) floating-point dtype for NumPy with 100k+ downloads. A portable alternative to long double with full casting, ufunc dispatch, scalar types, and serialization that behaves consistently across compilers and architectures.}
   \resumeItem{\href{https://github.com/SwayamInSync/QBLAS}{QBLAS} (C, C++)}{A high-performance BLAS library for IEEE-754 binary128 (quadruple) precision, implementing optimized linear-algebra kernels that bring quad-precision numerics to workloads unsupported by standard double-precision libraries.}
   \resumeItem{\href{https://github.com/SwayamInSync/cpp-verify}{cpp-verify} (C++, LLVM, SMT)}{Extends C++ with first-class formal-verification constructs (pre/post-conditions and invariants), lowering specifications through an LLVM-based pipeline and discharging the resulting proof obligations to SMT solvers.}
-  \resumeItem{\href{https://github.com/swayamInSync/mira}{MIRA -- Multimodal Image Reconstruction with Attention} (PyTorch)}{A transformer-based architecture for single-view text/image-to-3D reconstruction using ViT encoders and triplane decoders with cross-attention. Generates 3D mesh and video in under 10s on an A100, with SDXL-integrated diffusion for end-to-end scene synthesis.}
-  \resumeItem{\href{https://github.com/SwayamInSync/clothes-virtual-try-on}{Virtual Clothing Assistant} (PyTorch)}{End-to-end virtual try-on system: ResNet101 and UNet for garment/body segmentation, OpenPose for pose estimation, and a PyTorch VITON pipeline for realistic garment warping. Reaches SSIM 0.895 with 500+ GitHub stars.}
 \resumeItemListEnd
 
 %----------- PUBLICATIONS -----------

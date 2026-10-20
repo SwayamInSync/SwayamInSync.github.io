@@ -25,7 +25,7 @@
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.45in}
-\addtolength{\textheight}{1in}
+\addtolength{\textheight}{1.1in}
 
 \urlstyle{rm}
 \raggedbottom
@@ -45,11 +45,17 @@
       {\small #3} & {\small #4} \\
     \end{tabular*}\vspace{-1pt}}
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}}
+% Extra role under the same company (LinkedIn-style grouping): role left, dates right.
+\newcommand{\resumeRoleHeading}[2]{%
+  \vspace{1pt}\item[]
+    \begin{tabular*}{0.99\textwidth}{l@{\extracolsep{\fill}}r}
+      {\small #1} & {\small #2} \\
+    \end{tabular*}\vspace{-1pt}}
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}, itemsep=3pt, topsep=3pt, parsep=0pt]}
 \newcommand{\resumeHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.3em, label=$\bullet$, itemsep=1.5pt, topsep=2pt, parsep=0pt]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1.3em, label=$\bullet$, itemsep=1pt, topsep=2pt, parsep=0pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 \begin{document}
@@ -81,14 +87,31 @@
 \vspace{-2pt}
 \section{Experience}
 \resumeHeadingListStart
-  \resumeSubheading{\href{https://www.microsoft.com/en-us/research/lab/microsoft-research-india/}{Microsoft Research}}{07/2024 -- Present}{Research Fellow}{}
+  \resumeSubheading{\href{https://quansight.com/}{Quansight}}{}{Software Engineer II $\cdot$ Full-time}{07/2026 -- Present}
     \resumeItemListStart
-      \resumeItemPlain{Developed \& trained the world's first model and training pipeline for End-To-End Autoformalization and verification of programs in Rust}
-      \resumeItemPlain{Engineered the mid-training and post-training recipe for model learn formalizing program with formal guarantee, translating natural-language and informal specs into formally verifiable representations.}
-      \resumeItemPlain{Developing foundational algorithms that exploit reinforcement-learning gradient-optimization dynamics to improve representation efficiency, stability, and generalization.}
-      \resumeItemPlain{Developed an LLM on par with Gemini and GPT-4o for code generation, instruction-following, and reasoning; post-pretraining and online/offline RL.}
-      \resumeItemPlain{Developed SeleKT, a supervised fine-tuning method that preserves generalization while significantly improving downstream performance.}
-      \resumeItemPlain{Led large-scale training on multi-GPU clusters, optimizing distributed workflows for high-performance code synthesis.}
+      \resumeItemPlain{Re-architected vLLM's multi-process serving stack into a single free-threaded (no-GIL) process, cutting inter-engine coordination overhead $\sim$13.3x and P99 inter-token latency from $\sim$540 ms to $\sim$112 ms.}
+      \resumeItemPlain{Contribute upstream to CPython, NumPy, PyTorch, and CuPy, ensuring compatibility, correctness, and performance across the scientific Python and AI stack.}
+    \resumeItemListEnd
+  \resumeRoleHeading{Open Source Intern -- Numerical Types \& Precision (NumPy OSS) $\cdot$ Internship}{07/2024 -- 09/2024}
+    \resumeItemListStart
+      \resumeItemPlain{Led development of NumPy-QuadDType, a cross-platform 128-bit floating-point system for consistent quad precision beyond platform-dependent long double.}
+      \resumeItemPlain{Implemented full dtype ecosystem integration: casting, ufunc dispatch, scalar types, memory model, and serialization.}
+      \resumeItemPlain{Built multi-platform distribution and testing infrastructure handling compiler toolchains, SIMD availability, FMA support, and architecture-specific behavior.}
+    \resumeItemListEnd
+
+  \resumeSubheading{\href{https://neocambrian.ai/}{Neocambrian AI}}{}{Member of Technical Staff -- Reinforcement Learning}{}
+    \resumeItemListStart
+      \resumeItemPlain{Design and build RL environments for training and evaluating agentic models across cybersecurity, AI research, robot policy control, and vision reasoning, with verifiable, hacking-resistant rewards.}
+      \resumeItemPlain{Cybersecurity: agents find vulnerabilities and build working exploits by attacking simulated hardware (e.g., DMA), breaking cryptographic schemes, escaping sandboxes, and uncovering a planted cache-eviction bug.}
+      \resumeItemPlain{AI research, robotics \& vision: agents that run ML experiments end-to-end under automated grading; physics-simulated manipulation with domain randomization; grounded, verifiable multimodal reasoning tasks.}
+      \resumeItemPlain{Building a Physical AI RSI (recursive self-improvement) framework for robot policy learning, where policies generate their own simulated experience to drive successive rounds of policy and reward refinement.}
+    \resumeItemListEnd
+
+  \resumeSubheading{\href{https://www.microsoft.com/en-us/research/lab/microsoft-research-india/}{Microsoft Research}}{07/2024 -- 06/2026}{Research Fellow}{}
+    \resumeItemListStart
+      \resumeItemPlain{Built the world's first model and training pipeline for end-to-end autoformalization and verification of Rust programs, engineering the mid- and post-training recipe that turns informal specs into verifiable code.}
+      \resumeItemPlain{Developed RL algorithms exploiting gradient-optimization dynamics for representation efficiency, stability, and generalization; led large-scale multi-GPU distributed training.}
+      \resumeItemPlain{Trained an LLM on par with Gemini and GPT-4o for code generation and reasoning via post-pretraining and online/offline RL; developed SeleKT, an SFT method that preserves generalization while improving task accuracy.}
     \resumeItemListEnd
 
   \resumeSubheading{\href{https://numpy.org/}{NumPy (numpy-quaddtype)}}{12/2024 -- Present}{Maintainer}{}
@@ -98,22 +121,10 @@
       \resumeItemPlain{Work with contributors across architectures on portability, performance, and ABI concerns.}
     \resumeItemListEnd
 
-  \resumeSubheading{\href{https://quansight.com/}{Quansight}}{07/2024 -- 09/2024}{Open Source Intern -- Numerical Types \& Precision (NumPy OSS)}{}
-    \resumeItemListStart
-      \resumeItemPlain{Led development of NumPy-QuadDType, a cross-platform 128-bit floating-point system for consistent quad precision beyond platform-dependent long double.}
-      \resumeItemPlain{Implemented full dtype ecosystem integration: casting, ufunc dispatch, scalar types, memory model, and serialization.}
-      \resumeItemPlain{Built multi-platform distribution and testing infrastructure handling compiler toolchains, SIMD availability, FMA support, and architecture-specific behavior.}
-    \resumeItemListEnd
-
   \resumeSubheading{dataX.ai}{05/2022 -- 10/2022}{Machine Learning Engineer Intern}{}
     \resumeItemListStart
       \resumeItemPlain{Built deep-learning models for vision and language; created an ONNX conversion API with Triton deployment, cutting VM load by 12\%.}
       \resumeItemPlain{Wrote custom CUDA kernels for 3D medical-scan processing, achieving a 2x speedup in segmentation over existing GPU solutions.}
-    \resumeItemListEnd
-
-  \resumeSubheading{Scaler (InterviewBit)}{2022}{Data Science Intern}{}
-    \resumeItemListStart
-      \resumeItemPlain{Built predictive models and data-preprocessing automation, improving user engagement by \textasciitilde25\%.}
     \resumeItemListEnd
 \resumeHeadingListEnd
 
@@ -123,7 +134,6 @@
 \resumeItemListStart
   \resumeItemPlain{\textbf{\href{https://www.microsoft.com/en-us/research/publication/nextcoder-robust-adaptation-of-code-lms-to-diverse-code-edits/}{NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits}} (ICML 2025; ICLR 2025 DL4Code).\\ \textbf{Swayam Singh}, Tushar Aggarwal, et al. A synthetic-data generation pipeline and SeleKT (Selective Knowledge Transfer), a new fine-tuning algorithm that makes code LLMs robust to diverse, real-world code edits. Our 32B model matches Gemini and beats GPT-4o on harder tasks like aider-polyglot, achieved purely via SFT, with SeleKT substantially reducing catastrophic forgetting compared to other methods.}
   \resumeItemPlain{\textbf{\href{https://arxiv.org/abs/2407.03941}{Narrow Transformer: StarCoder-Based Java-LM For Desktop}} (arXiv:2407.03941, 2024).\\ Kamalkumar Rathinasamy, \ldots, \textbf{Swayam Singh}, et al. A compact, Java-specialized code language model designed to run efficiently on desktop hardware.}
-  \newpage
   \resumeItemPlain{\textbf{\href{https://arxiv.org/abs/2308.07124}{OctoPack: Instruction Tuning Code Large Language Models}} (ICLR 2024 Spotlight; NeurIPS 2023 Instruction Workshop).\\ Niklas Muennighoff, \ldots, \textbf{Swayam Singh}, et al. Instruction tuning of code models using natural-language Git commits (CommitPack / CommitPackFT).}
   \resumeItemPlain{\textbf{\href{https://arxiv.org/abs/2305.06161}{StarCoder: May the Source Be With You!}} (TMLR 2023).\\ Raymond Li, \ldots, \textbf{Swayam Singh}, et al.\ (BigCode). A 15.5B-parameter open code LLM trained on 1T tokens of permissively licensed code.}
 \resumeItemListEnd
